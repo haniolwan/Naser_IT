@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap');
+
+.header {
+    font-family: 'Nunito Sans';
+    background-image: url("../../assets/header-waves.png");
+    background-repeat: no-repeat;
+    color: #fff;
+    background-color: #72746A;
+    height: 670px;
+}
+
+.navbar {
+    height: 100px;
+    /* border: 2px solid red; */
+}
+
+.nav-items {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+
+.content {
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-content {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-content {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: end;
+}
+
+.title {
+    font-size: 56px;
+    line-height: 60px;
+}
+
+.description {
+    font-size: 30px;
+    line-height: 160.4%;
+    letter-spacing: 2%;
+}
+
+.aqua-line {
+    border-radius: 20px;
+    height: 5px;
+    margin-top: 16px;
+    width: 10%;
+    background-color: #3ADAD9;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    width: 578px;
+}
+
+.header-image {
+    width: 50%;
+}
+
+.welcome-msg {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 35px;
+    color: #606060;
+    background-color: #fff;
+}
+
+.get-started-button {
+    width: 30%;
+}
+.ellipse-image{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: 360px;
+}
+.rectangle-image{
+    width: 30.72px;
+    height: 30.31px;
+    position: relative;
+    left: 630px;
+    top: 30px;
+}
+.cursor-image{
+    width: 49.31px;
+    height: 47.36px;
+    position: relative;
+    left: 450px;
+    top: 230px;
+}
+.polygon-image{
+    width: 37.76px;
+    height: 37.13px;
+    position: relative;
+    left: 365px;
+    top: 360px;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-items {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .language-dropdown {
+        display: flex;
+        width: 100%;
+    }
+}
