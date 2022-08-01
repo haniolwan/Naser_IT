@@ -8,7 +8,7 @@ import polygonImg from '../../assets/polygon.png';
 
 
 const { Link } = Nav;
-const { Item, Divider } = NavDropdown;
+const { Item } = NavDropdown;
 const { Collapse, Toggle, Brand } = Navbar;
 const Header = () => {
     return (
