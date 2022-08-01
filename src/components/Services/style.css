@@ -1,0 +1,86 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 268.09px;
+    height: 292.88px;
+    border-radius: 40px;
+    box-shadow: -2px -1px #ffffe9;
+    border: 1px solid #F2F2F2;
+}
+.services-content{
+    display: flex;
+    flex-direction: row;
+}
+.services-left-content{
+    width: 50px;
+}
+/* .services-right-content{
+    display: flex;
+    flex-direction: row;
+} */
+
+.services-cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 43%;
+}
+
+.search-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105.32px;
+    height: 93.51px;
+    border-radius: 20px;
+    background-color: #F1F7FE;
+}
+
+.search-img-container:hover {
+    background-color: #cae3ff;
+}
+
+.wallet-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105.32px;
+    height: 93.51px;
+    border-radius: 20px;
+    background-color: #FFF7E3;
+}
+
+.wallet-img-container:hover {
+    background-color: #fbeabf;
+}
+
+.code-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105.32px;
+    height: 93.51px;
+    border-radius: 20px;
+    background-color: #FEF2F8;
+}
+
+.code-img-container:hover {
+    background-color: #f9d7e8;
+}
+
+.chart-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105.32px;
+    height: 93.51px;
+    border-radius: 20px;
+    background-color: #DDFAEE;
+}
+
+.chart-img-container:hover {
+    background-color: #b8f7dd;
+}

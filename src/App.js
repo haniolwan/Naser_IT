@@ -1,12 +1,16 @@
 import './App.css';
-import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AboutUs from './components/About Us';
+import {
+  Header,
+  AboutUs,
+  Services
+} from './components';
 function App() {
   return (
     <>
       <Header />
       <AboutUs />
+      <Services />
     </>
   );
 }
