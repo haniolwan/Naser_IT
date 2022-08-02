@@ -1,0 +1,55 @@
+.contact-title {
+    color: #331B3B;
+}
+
+.contact-first-row {
+    gap: 10px;
+}
+
+.contact-img {
+    position: relative;
+    top: 18px;
+    width: 600px;
+    height: 400px;
+}
+
+.contact-input {
+    height: 55px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    /* Phones */
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-img {
+        width: 100%;
+        height: 100%;
+        position: static;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* For Ipads */
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-img {
+        width: 100%;
+        height: 100%;
+        position: static;
+    }
+}

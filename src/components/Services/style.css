@@ -129,6 +129,7 @@
 }
 
 @media only screen and (max-width: 600px) {
+
     /* Phones */
     .services-content {
         margin-top: 100px;
@@ -169,6 +170,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
     /* For Ipads */
     .services-content {
         margin-top: 150px;
