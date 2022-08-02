@@ -32,10 +32,10 @@ const Header = () => {
                     </Collapse>
                 </Container>
             </Navbar>
-            <img src={ellipseImg} class="img-fluid ellipse-image" alt="Header.jpg" />
-            <img src={rectangleImg} class="img-fluid rectangle-image" alt="Header.jpg" />
-            <img src={cursorImg} class="img-fluid cursor-image" alt="Header.jpg" />
-            <img src={polygonImg} class="img-fluid polygon-image" alt="Header.jpg" />
+            <img src={ellipseImg} className="img-fluid ellipse-image" alt="Header.jpg" />
+            <img src={rectangleImg} className="img-fluid rectangle-image" alt="Header.jpg" />
+            <img src={cursorImg} className="img-fluid cursor-image" alt="Header.jpg" />
+            <img src={polygonImg} className="img-fluid polygon-image" alt="Header.jpg" />
             <Container >
                 <Row className="content">
                     <Col className="right-content">
@@ -46,7 +46,7 @@ const Header = () => {
                             <div className="aqua-line"></div>
                         </h1>
                         <h3 className="description">Create, Build, Collaborate and ship products very faster </h3>
-                        <button type="button" class="btn btn-warning get-started-button">Get Started</button>
+                        <button type="button" className="btn btn-warning get-started-button">Get Started</button>
                     </Col>
                     <Col className="left-content">
                         {/* <img src={headerImg} class="img-fluid header-image" alt="Header.jpg" /> */}
