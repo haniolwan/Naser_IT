@@ -6,7 +6,7 @@ const AboutUs = () => {
         <Container className="mt-5">
             <Row className="content">
                 <Col className="right-content">
-                    <img src={aboutImg} class="img-fluid about-image" alt="AboutUs.jpg" />
+                    <img src={aboutImg} className="img-fluid about-image" alt="AboutUs.jpg" />
                 </Col>
                 <Col className="">
                     <h2 className="about-text">About us</h2>

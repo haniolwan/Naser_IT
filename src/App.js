@@ -4,15 +4,19 @@ import {
   Header,
   AboutUs,
   Services,
-  Contact
+  Contact,
+  OurClients
 } from './components';
 function App() {
   return (
     <>
       <Header />
+      <OurClients />
       <AboutUs />
       <Services />
       <Contact />
+      <AboutUs />
+
     </>
   );
 }

@@ -12,10 +12,10 @@ import './style.css';
 const Services = () => {
     return (
         <Container>
-            <img src={rect1} class="img-fluid services-rect1-img" alt="Services.jpg" />
-            <img src={rect2} class="img-fluid services-rect2-img" alt="Services.jpg" />
-            <img src={dots} class="img-fluid services-dots-img" alt="Services.jpg" /> 
-            <img src={ellipse} class="img-fluid services-ellipse-img" alt="Services.jpg" />
+            <img src={rect1} className="img-fluid services-rect1-img" alt="Services.jpg" />
+            <img src={rect2} className="img-fluid services-rect2-img" alt="Services.jpg" />
+            <img src={dots} className="img-fluid services-dots-img" alt="Services.jpg" />
+            <img src={ellipse} className="img-fluid services-ellipse-img" alt="Services.jpg" />
             <Row className="services-content">
                 <Col className="services-left-content col-5">
                     <h1>How can we help your Business?</h1>
@@ -25,7 +25,7 @@ const Services = () => {
                     <div className="left-cards">
                         <Container className="card-container">
                             <div className="search-img-container">
-                                <img src={searchImg} class="img-fluid " alt="Services.jpg" />
+                                <img src={searchImg} className="img-fluid" alt="Services.jpg" />
                             </div>
                             <h3>Business Idea Planning</h3>
                             <p>We present you a proposal and discuss niffty-gritty like</p>
