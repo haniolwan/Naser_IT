@@ -18,12 +18,24 @@ const OurClients = () => {
         <div className="clients-content">
             <h2 className="client-text">Our Clients</h2>
             <Container className="all-clients">
-                <img className="porsche-client client-img-100 single-client" src={porscheImg} alt="clients.svg" />
-                <img className="sche-client client-img-100 single-client" src={scheImg} alt="clients.svg" />
-                <img className="lotus-client client-img-50 single-client" src={lotusImg} alt="clients.svg" />
-                <img className="apl-client client-img-100 single-client" src={aplImg} alt="clients.svg" />
-                <img className="geely-client client-img-100 single-client" src={geelyImg} alt="clients.svg" />
-                <img className="bmw-client client-img-50 single-client" src={bmwImg} alt="clients.svg" />
+                <a href="https://www.porsche.com/" target="_blank" rel="noreferrer">
+                    <img className="porsche-client client-img-100 single-client" src={porscheImg} alt="clients.svg" />
+                </a>
+                <a href="https://www.schaeffler.com/" target="_blank" rel="noreferrer">
+                    <img className="sche-client client-img-100 single-client" src={scheImg} alt="clients.svg" />
+                </a>
+                <a href="https://www.lotuscars.com/" target="_blank" rel="noreferrer">
+                    <img className="lotus-client client-img-50 single-client" src={lotusImg} alt="clients.svg" />
+                </a>
+                <a href="https://apl-landau.de/" target="_blank" rel="noreferrer">
+                    <img className="apl-client client-img-100 single-client" src={aplImg} alt="clients.svg" />
+                </a>
+                <a href="http://global.geely.com/" target="_blank" rel="noreferrer">
+                    <img className="geely-client client-img-100 single-client" src={geelyImg} alt="clients.svg" />
+                </a>
+                <a href="http://www.bmwgroup.com/" target="_blank" rel="noreferrer">
+                    <img className="bmw-client client-img-50 single-client" src={bmwImg} alt="clients.svg" />
+                </a>
             </Container>
         </div>
     );
