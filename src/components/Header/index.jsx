@@ -42,7 +42,8 @@ const Header = () => {
                         <div className="welcome-msg mb-4">
                             👋 Welcome to Naser IT
                         </div>
-                        <h1 className="title mb-4">Work the way that works for you
+                        <h1 className="title mb-4">
+                            Work the way that works for you
                             <div className="aqua-line"></div>
                         </h1>
                         <h3 className="description">Create, Build, Collaborate and ship products very faster </h3>

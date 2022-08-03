@@ -5,7 +5,8 @@ import {
   AboutUs,
   Services,
   Contact,
-  OurClients
+  OurClients,
+  Tools
 } from './components';
 function App() {
   return (
@@ -15,8 +16,7 @@ function App() {
       <AboutUs />
       <Services />
       <Contact />
-      <AboutUs />
-
+      <Tools />
     </>
   );
 }
