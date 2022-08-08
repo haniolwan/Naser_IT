@@ -7,7 +7,8 @@ import {
   Contact,
   OurClients,
   Tools,
-  Footer
+  Footer,
+  OurProcess
 } from './components';
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Header />
       <OurClients />
       <AboutUs />
-      <Services />
+      <OurProcess />
+      {/* <Services /> */}
       <Contact />
       <Tools />
       <Footer />

@@ -1,0 +1,225 @@
+.process {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.process-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+}
+
+.process-section-title {
+    font-size: 2.25rem;
+    line-height: 3.125rem;
+    margin-bottom: 0.9375rem;
+    font-weight: 700;
+}
+
+.process-section-description {
+    color: #717171
+}
+
+.processes-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-process-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+}
+
+.second-process-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+}
+
+.third-process-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+}
+
+.first-process-img {
+    width: 60%;
+    filter: invert(79%) sepia(33%) saturate(6934%) hue-rotate(171deg) brightness(99%) contrast(99%);
+}
+
+.second-process-img {
+    width: 55%;
+    filter: invert(35%) sepia(49%) saturate(1907%) hue-rotate(332deg) brightness(102%) contrast(96%);
+}
+
+.third-processs-img {
+    width: 55%;
+    filter: invert(76%) sepia(19%) saturate(5358%) hue-rotate(330deg) brightness(101%) contrast(98%);
+}
+
+.process-description {
+    width: 60%;
+}
+
+.process-section-img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.process-background {
+    display: flex;
+    align-items: center;
+}
+
+.first-dashed-lines {
+    position: relative;
+    left: 90px;
+}
+
+.second-dashed-lines {
+    position: relative;
+    left: 110px;
+}
+
+.process-details {
+    font-size: 16px;
+    color: #646464;
+    line-height: 25px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* Phones */
+
+    .process-title {
+        width: 100%;
+    }
+
+    .first-dashed-lines {
+        display: none;
+    }
+
+    .second-dashed-lines {
+        display: none;
+    }
+
+    .processes-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .single-process {
+        margin-bottom: 20px;
+    }
+
+    .second-process-container {
+        flex-direction: row-reverse;
+    }
+
+    .first-process-img {
+        width: 40%;
+    }
+
+    .second-process-img {
+        width: 40%;
+    }
+
+    .third-processs-img {
+        width: 40%;
+    }
+
+    .process-descriotion {
+        width: 100%;
+    }
+
+    .process-details {
+        font-size: 14px;
+        color: #646464;
+        line-height: 25px;
+    }
+
+    .process-section-img {
+        height: auto;
+        max-width: 80%;
+        border: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .process-background {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* For Ipads */
+
+    .process-title {
+        width: 70%;
+    }
+
+    .processes-content {
+        flex-direction: column;
+    }
+
+    .single-process {
+        width: 80%;
+    }
+
+    .processes-container {
+        align-items: center;
+    }
+
+    .first-dashed-lines {
+        position: static;
+    }
+
+    .second-dashed-lines {
+        position: static;
+    }
+
+    .process-background {
+        display: flex;
+        justify-content: center;
+    }
+
+    .process-section-img {
+        height: auto;
+        max-width: 90%;
+        border: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
