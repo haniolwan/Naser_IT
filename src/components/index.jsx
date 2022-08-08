@@ -5,6 +5,7 @@ import Contact from './Contact';
 import OurClients from './Our Clients';
 import Tools from './Tools';
 import Footer from './Footer';
+import OurProcess from './Our Process';
 
 export {
     Header,
@@ -13,5 +14,6 @@ export {
     Contact,
     OurClients,
     Tools,
-    Footer
+    Footer,
+    OurProcess
 }
