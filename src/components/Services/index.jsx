@@ -10,10 +10,7 @@ import qaImg from '../../assets/services/qa.png';
 import designImg from '../../assets/services/design.png';
 import handImg from '../../assets/services/hand.png';
 import rightArrowImg from '../../assets/services/right-arrow.png';
-
-
 import './style.css';
-
 
 const Services = () => {
     return (
