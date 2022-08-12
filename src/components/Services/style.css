@@ -1,6 +1,6 @@
 .services {
-    /* background-image: url(../../assets/services/background-blob.svg); */
     background-color: #F9FBFE;
+    padding: 80px;
 }
 
 .services-container {
@@ -162,13 +162,45 @@
 
 
 @media only screen and (max-width: 600px) {
+
     /* Phones */
+    .services {
+        padding: 0;
+    }
 
     .card-icon-container {
         margin-bottom: 12px;
     }
 
+    .first-service-img {
+        top: 62px;
+        width: 18%;
+    }
 
+    .second-service-img {
+        top: 70px;
+        width: 18%;
+    }
+
+    .third-service-img {
+        top: 65px;
+        width: 18%;
+    }
+
+    .forth-service-img {
+        top: 64px;
+        width: 18%;
+    }
+
+    .fifth-service-img {
+        top: 62px;
+        width: 18%;
+    }
+
+    .sixth-service-img {
+        top: 62px;
+        width: 18%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -181,22 +213,28 @@
     .card-title a {
         font-size: 20px;
     }
-    .first-service-img{
+
+    .first-service-img {
         top: 62px;
     }
-    .second-service-img{
+
+    .second-service-img {
         top: 63px;
     }
-    .third-service-img{
+
+    .third-service-img {
         top: 63px;
     }
-    .forth-service-img{
+
+    .forth-service-img {
         top: 62px;
     }
-    .fifth-service-img{
+
+    .fifth-service-img {
         top: 60px;
     }
-    .sixth-service-img{
+
+    .sixth-service-img {
         top: 60px;
     }
 }

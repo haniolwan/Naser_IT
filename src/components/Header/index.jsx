@@ -1,42 +1,29 @@
-import { NavDropdown, Navbar, Container, Nav, Row, Col } from 'react-bootstrap';
-import './style.css';
-// import headerImg from '../../assets/headerImg.jpg';
+import {
+    Container,
+    Row,
+    Col
+} from 'react-bootstrap';
 import ellipseImg from '../../assets/ellipse.png';
 import rectangleImg from '../../assets/rectangle.png';
 import cursorImg from '../../assets/cursor.png';
 import polygonImg from '../../assets/polygon.png';
-
-
-const { Link } = Nav;
-const { Item } = NavDropdown;
-const { Collapse, Toggle, Brand } = Navbar;
+import './style.css';
+import { useScrollPosition } from '../../hooks/useScrollPosition';
+import { StaticNavbar } from './StaticNavbar';
+import { StickyNavbar } from './StickyNavbar';
+import { useWindowSize } from '../../hooks/useWindowSize';
 const Header = () => {
+    const scrollPosition = useScrollPosition();
+    const { width: windowWidth } = useWindowSize();
     return (
         <div className="header">
-            <Navbar className="navbar navbar-dark py-4" expand="lg">
-                <Container>
-                    <Brand href="#home">Naser IT</Brand>
-                    <Toggle aria-controls="basic-navbar-nav" />
-                    <Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto nav-items">
-                            <Link href="#home">Home</Link>
-                            <Link href="#services">Services</Link>
-                            <Link href="#about">About Us</Link>
-                            <Link href="#contact">Contact Us</Link>
-                            <NavDropdown className="ms-auto language-dropdown" title="English" id="basic-nav-dropdown">
-                                <Item href="#action/3.1">English</Item>
-                                <Item href="#action/3.3">German</Item>
-                                {/* <Divider /> */}
-                            </NavDropdown>
-                        </Nav>
-                    </Collapse>
-                </Container>
-            </Navbar>
+            {windowWidth > 1024 && <StaticNavbar />}
+            {windowWidth <= 1024 ? <StickyNavbar /> : scrollPosition >= 30 ? <StickyNavbar /> : null}
             <img src={ellipseImg} className="img-fluid ellipse-image" alt="Header.jpg" />
             <img src={rectangleImg} className="img-fluid rectangle-image" alt="Header.jpg" />
             <img src={cursorImg} className="img-fluid cursor-image" alt="Header.jpg" />
             <img src={polygonImg} className="img-fluid polygon-image" alt="Header.jpg" />
-            <Container >
+            <Container>
                 <Row className="content">
                     <Col className="right-content">
                         <div className="welcome-msg mb-4">

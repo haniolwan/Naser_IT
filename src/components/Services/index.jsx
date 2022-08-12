@@ -26,7 +26,7 @@ const Services = () => {
                     <Col>
                         {/* First Card */}
                         <a className="card-link" href="/first-link">
-                            <div className="service-card">
+                            <div className="service-card" data-aos="fade-up">
                                 <img className="first-service-img service-img" src={responsiveImg} alt="service.png" />
                                 <div className="card-icon-container">
                                     <svg
@@ -49,7 +49,7 @@ const Services = () => {
                         </a>
                         {/* Forth Card */}
                         <a className="card-link" href="/forth-card">
-                            <div className="service-card">
+                            <div className="service-card" data-aos="fade-up">
                                 <img className="forth-service-img service-img" src={qaImg} alt="service.png" />
                                 <div className="card-icon-container">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="116px" height="81px">
@@ -72,8 +72,8 @@ const Services = () => {
                     </Col>
                     <Col>
                         {/* Second Card */}
-                        <a className="card-link" href="">
-                            <div className="service-card">
+                        <a className="card-link" href="/">
+                            <div className="service-card" data-aos="fade-up">
                                 <img className="second-service-img service-img" src={codeImg} alt="service.png" />
                                 <div className="card-icon-container">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="105px" height="80px">
@@ -93,8 +93,8 @@ const Services = () => {
                             </div>
                         </a>
                         {/* Fifth Card */}
-                        <a className="card-link" href="">
-                            <div className="service-card">
+                        <a className="card-link" href="/">
+                            <div className="service-card" data-aos="fade-up">
                                 <img className="fifth-service-img service-img" src={designImg} alt="service.png" />
                                 <div className="card-icon-container">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="111px" height="79px">
@@ -116,8 +116,8 @@ const Services = () => {
                     </Col>
                     <Col>
                         {/* Third Card */}
-                        <a className="card-link" href="">
-                            <div className="service-card">
+                        <a className="card-link" href="/">
+                            <div className="service-card" data-aos="fade-up">
                                 <img className="third-service-img service-img" src={mobileImg} alt="service.png" />
                                 <div className="card-icon-container">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="119px" height="80px">
@@ -136,8 +136,8 @@ const Services = () => {
                             </div>
                         </a>
                         {/* Sixth Card */}
-                        <a className="card-link" href="">
-                            <div className="service-card">
+                        <a className="card-link" href="/">
+                            <div className="service-card" data-aos="fade-up">
                                 <img className="sixth-service-img service-img" src={handImg} alt="service.png" />
                                 <div className="card-icon-container">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="112px" height="81px">

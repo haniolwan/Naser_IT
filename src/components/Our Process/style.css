@@ -3,6 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 7rem;
 }
 
 .process-title {
@@ -38,7 +39,7 @@
 
 .first-process-img-container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 11rem;
     width: 11rem;
@@ -56,7 +57,7 @@
 
 .third-process-img-container {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 11rem;
     width: 11rem;
@@ -64,7 +65,7 @@
 }
 
 .first-process-img {
-    width: 60%;
+    width: 55%;
     filter: invert(79%) sepia(33%) saturate(6934%) hue-rotate(171deg) brightness(99%) contrast(99%);
 }
 
@@ -79,7 +80,7 @@
 }
 
 .process-description {
-    width: 60%;
+    width: 50%;
 }
 
 .process-section-img {
@@ -99,12 +100,12 @@
 
 .first-dashed-lines {
     position: relative;
-    left: 90px;
+    left: 80px;
 }
 
 .second-dashed-lines {
     position: relative;
-    left: 110px;
+    left: 95px;
 }
 
 .process-details {
@@ -136,6 +137,16 @@
 
     .single-process {
         margin-bottom: 20px;
+    }
+
+    .first-process-img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .third-process-container {
+        display: flex;
+        justify-content: center;
     }
 
     .second-process-container {
@@ -176,6 +187,9 @@
 
     .process-background {
         display: flex;
+        justify-content: center;
+    }
+    .third-process-img-container {
         justify-content: center;
     }
 

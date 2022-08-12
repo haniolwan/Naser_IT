@@ -9,19 +9,47 @@
     height: 670px;
 }
 
+.sticky-navbar {
+    height: 70px;
+}
 
 .nav-items {
     display: flex;
-    width: 70%;
+    width: 75%;
     justify-content: center;
+    gap: 25px;
 }
 
 .nav-link {
-    color: #fff;
+    font-size: 16px;
+    font-weight: 1000;
+}
+
+.sticky-link {
+    color: black;
+}
+
+.static-nav-link:after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px #FFF;
+    transform: scaleX(0);
+    transition: transform 400ms ease-in-out;
+}
+
+.static-nav-link:hover:after {
+    transform: scaleX(1);
+}
+
+.static-nav-link.fromRight:after {
+    transform-origin: 100% 50%;
+}
+
+.static-nav-link.fromLeft:after {
+    transform-origin: 0% 50%;
 }
 
 .content {
-    /* border: 2px solid red; */
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -29,7 +57,6 @@
 }
 
 .right-content {
-    /* border: 2px solid blue; */
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -37,7 +64,6 @@
 }
 
 .left-content {
-    /* border: 2px solid blue; */
     display: flex;
     justify-content: end;
 }
@@ -120,10 +146,71 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
     /* For Ipad */
+    .title {
+        font-size: 47px;
+        line-height: 42px;
+    }
+
+    .right-content {
+        align-items: flex-start !important;
+    }
+
+    .get-started-button {
+        width: 33%;
+    }
+
+    .nav-items {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .nav-items {
+        margin: 0 auto;
+    }
+
+    .sticky-navbar-content {
+        background-color: #fff;
+    }
+
+    .sticky-navbar {
+        height: auto;
+    }
+
+    .content {
+        top: 70px;
+    }
+
+    .ellipse-image {
+        display: none;
+    }
+
+    .polygon-image {
+        display: none;
+
+    }
+
+    .cursor-image {
+        display: none;
+    }
+
+    .language-dropdown {
+        margin-left: 0 !important;
+    }
+
 }
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 600px) {
+
+    /* Phones */
+
+    .sticky-navbar {
+        background-color: #72746A;
+    }
+
     .nav-items {
         display: flex;
         width: 100%;
@@ -133,6 +220,11 @@
     .content {
         display: flex;
         flex-direction: column;
+    }
+
+    .right-content {
+        position: relative;
+        top: 100px;
     }
 
     .title {
@@ -152,8 +244,10 @@
 
     .language-dropdown {
         display: flex;
+        flex-direction: column;
         width: 100%;
     }
+
 
     .polygon-image {
         display: none;
@@ -171,5 +265,16 @@
 
     .cursor-image {
         display: none;
+    }
+
+    .nav-items {
+        gap: 0;
+    }
+
+    .navbar-nav .dropdown-menu {
+        margin-bottom: 7px;
+        position: static;
+        width: 50%;
+        padding: 20p;
     }
 }

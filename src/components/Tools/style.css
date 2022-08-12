@@ -4,16 +4,17 @@
     align-items: center;
     margin-top: 25px;
     height: 200px;
-    background-color: #e6f0ff;
+    background-color: #F9FBFE;
 }
 
 .single-tool {
     display: flex;
     justify-content: center;
-    /* filter: grayscale(100%); */
-    max-width: 100%;
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
     height: 82px;
 }
+
 
 .single-tool:hover {
     filter: none;
@@ -23,29 +24,29 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    gap: 45px;
 }
 
 .dspace-tool {
-    padding: 16px 14px;
+    height: 30px;
 }
 
 .spice-tool {
-    padding: 25px 14px;
+    height: 110px;
 }
 
 .iso-tool {
-    padding: 0px 14px;
+    height: 60px;
 }
 
 .lauter-tool {
-    padding: 0px 0px 10px 0px;
+    padding: 10px 0px 20px;
 }
 
 .vector-tool {
-    padding: 10px 14px;
+    height: 45px;
 }
-
 
 .client-text {
     font-size: 40px;
@@ -57,6 +58,11 @@
 @media only screen and (max-width: 600px) {
 
     /* Phones */
+    .all-tools {
+        padding: 40px;
+        flex-direction: column;
+    }
+
     .tools-content {
         display: flex;
         justify-content: center;
@@ -76,6 +82,7 @@
         font-size: 56px;
         justify-self: center;
     }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -88,6 +95,9 @@
         align-items: center;
         margin-top: 25px;
         height: 100%;
+    }
+    .all-tools{
+        flex-wrap: wrap;
     }
 
     .single-client {
