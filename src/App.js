@@ -1,27 +1,32 @@
+import { useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  Header,
-  AboutUs,
-  Services,
-  Contact,
-  OurClients,
-  Tools,
-  Footer,
-  OurProcess
-} from './components';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { Routes, Route } from 'react-router-dom';
+import { Landing } from './components/Pages/Landing Page';
+
+
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 500,
+      once: true
+    });
+  }, [])
   return (
-    <>
-      <Header />
-      <OurClients />
-      <AboutUs />
-      <OurProcess />
-      <Services />
-      <Contact />
-      <Tools />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/services" element={
+        <h1>Hello Services</h1>
+      } />
+      <Route path="/about" element={
+        <h1>Hello About Us</h1>
+      } />
+      <Route path="/contact" element={
+        <h1>Hello Contact Us</h1>
+      } />
+    </Routes>
   );
 }
 

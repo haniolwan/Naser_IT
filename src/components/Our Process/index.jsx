@@ -11,7 +11,7 @@ import './style.css';
 
 const OurProcess = () => {
     return (
-        <Container className="process mt-5 mb-5">
+        <Container className="process mb-5">
             <div className="process-title mb-4">
                 <h1 className="process-section-title">How it Works</h1>
                 <p className="process-section-description">
@@ -21,7 +21,7 @@ const OurProcess = () => {
             <Row className="processes-content">
                 <Col className="processes-container">
                     {/* Analysis & Design */}
-                    <div className="single-process">
+                    <div className="single-process" data-aos="fade-down">
                         <div className="first-process-img-container">
                             <img className="first-process-img" src={noteImg} alt="Process.png" />
                         </div>
@@ -56,7 +56,7 @@ const OurProcess = () => {
                         </path>
                     </svg>
                     {/* Development */}
-                    <div className="single-process second-process-container">
+                    <div className="single-process second-process-container" data-aos="fade-down">
                         <div className="process-description">
                             <h2>
                                 Development
@@ -91,7 +91,7 @@ const OurProcess = () => {
                         </path>
                     </svg>
                     {/* Testing & Launch */}
-                    <div className="single-process">
+                    <div className="single-process" data-aos="fade-down">
                         <div className="third-process-img-container">
                             <img className="third-processs-img" src={profilesImg} alt="Process.png" />
                         </div>

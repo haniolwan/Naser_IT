@@ -4,14 +4,14 @@ import {
 import dspaceImg from '../../assets/tools/dspace.png';
 import vectorImg from '../../assets/tools/vector.png';
 import lauterImg from '../../assets/tools/lauter.png';
-import isoImg from '../../assets/tools/iso.png';
-import spiceImg from '../../assets/tools/spice.png';
+import isoImg from '../../assets/tools/iso-26262.png';
+import spiceImg from '../../assets/tools/aspice2.png';
 import './style.css';
 
 
-const Tools = () => {
+const Tools = ({ fade }) => {
     return (
-        <div className="tools-content">
+        <div className="tools-content" data-aos={fade}>
             <Container className="all-tools">
                 <a href="https://www.dspace.com/" target="_blank" rel="noreferrer">
                     <img className="dspace-tool client-img-100 single-tool" src={dspaceImg} alt="clients.svg" />
