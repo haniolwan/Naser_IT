@@ -29,6 +29,7 @@
     color: black;
 }
 
+
 .static-nav-link:after {
     display: block;
     content: '';
@@ -58,14 +59,14 @@
 
 .right-content {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 10px;
 }
 
 .left-content {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .title {
@@ -90,7 +91,7 @@
 .header-text {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     text-align: start;
     width: 578px;
 }

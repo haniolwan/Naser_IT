@@ -44,7 +44,7 @@
 
 .socials {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 24px;
     position: relative;
     right: 10px;

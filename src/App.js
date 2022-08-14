@@ -11,10 +11,12 @@ import {
   Route
 } from 'react-router-dom';
 import {
-  Landing
-  , Services
+  AboutUs,
+  Landing,
+  Services,
+  SingleService
 } from './components/Pages/';
-import SingleService from './components/Pages/SingleService';
+
 import { Loading } from './components/common';
 
 
@@ -43,9 +45,7 @@ function App() {
           <Route path="*" element={<SingleService />} />
         </Route>
         <Route path="/services" element={<Services />} />
-        <Route path="/about" element={
-          <h1>Hello About Us</h1>
-        } />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={
           <h1>Hello Contact Us</h1>
         } />
