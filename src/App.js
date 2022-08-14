@@ -1,10 +1,17 @@
 import { useEffect } from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { Routes, Route } from 'react-router-dom';
-import { Landing } from './components/Pages/Landing Page';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import {
+  Routes,
+  Route
+} from 'react-router-dom';
+import {
+  Landing
+  , Services
+} from './components/Pages/';
+import SingleService from './components/Pages/SingleService';
 
 
 function App() {
@@ -17,9 +24,10 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
-      <Route path="/services" element={
-        <h1>Hello Services</h1>
-      } />
+      <Route path="/ui-design/*" element={<SingleService title="Ui Design" />} >
+        <Route path="*" element={<SingleService />} />
+      </Route>
+      <Route path="/services" element={<Services />} />
       <Route path="/about" element={
         <h1>Hello About Us</h1>
       } />

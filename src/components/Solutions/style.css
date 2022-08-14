@@ -159,13 +159,15 @@
     text-decoration: none;
 }
 
-
-
 @media only screen and (max-width: 600px) {
 
     /* Phones */
     .services {
         padding: 0;
+    }
+
+    .services-container {
+        padding-top: 50px;
     }
 
     .card-icon-container {
