@@ -3,6 +3,7 @@ import { StickyNavbar } from "./Navbar/StickyNavbar";
 import ServiceCard from "./Service Card";
 import ProcessCard from "./Process Card";
 import NavigationTab from "./Navigation Tab";
+import Loading from "./Loading Screen";
 
 
 
@@ -11,5 +12,6 @@ export {
     StaticNavbar,
     StickyNavbar,
     ProcessCard,
-     NavigationTab
+    NavigationTab,
+    Loading
 };
