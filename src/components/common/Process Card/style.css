@@ -1,0 +1,51 @@
+.process-details-container {
+    margin-bottom: 10%;
+}
+
+.process-loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.process-title-loader {
+    width: 420px;
+    height: 320px;
+}
+
+.first-details-loader {
+    width: 180px;
+    height: 30px;
+}
+
+.second-details-loader {
+    width: 95%;
+    height: 100px;
+}
+
+.third-details-loader {
+    width: 95%;
+    height: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Phones */
+    .process-desc-img {
+        width: 100%;
+    }
+
+    .process-details-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .process-loading{
+        gap: 30px;
+    }
+}

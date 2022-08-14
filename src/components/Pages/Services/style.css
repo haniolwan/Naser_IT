@@ -1,0 +1,47 @@
+.services-page-container {
+    position: relative;
+    background: rgb(114, 116, 106);
+    background: -moz-linear-gradient(71deg, rgba(114, 116, 106, 1) 0%, rgba(73, 163, 164, 1) 100%);
+    background: -webkit-linear-gradient(71deg, rgba(114, 116, 106, 1) 0%, rgba(73, 163, 164, 1) 100%);
+    background: linear-gradient(71deg, rgba(114, 116, 106, 1) 0%, rgba(73, 163, 164, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#72746a", endColorstr="#49a3a4", GradientType=1);
+}
+
+.services-page-container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading-text {
+    color: #fff;
+}
+
+.right-arrow {
+    height: 12px;
+    width: 18px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(225deg) brightness(99%) contrast(105%);
+}
+
+.home-link {
+    cursor: pointer;
+}
+
+.home-link:hover {
+    color: rgba(255, 255, 255, 0.722);
+    transition: all 0.5s ease-in-out;
+}
+
+.first-circle {
+    position: absolute;
+}
+
+.second-circle {
+    position: absolute;
+
+}
+
+.third-circle {
+    position: absolute;
+}

@@ -7,11 +7,11 @@ import ellipseImg from '../../assets/ellipse.png';
 import rectangleImg from '../../assets/rectangle.png';
 import cursorImg from '../../assets/cursor.png';
 import polygonImg from '../../assets/polygon.png';
-import './style.css';
 import { useScrollPosition } from '../../hooks/useScrollPosition';
-import { StaticNavbar } from './StaticNavbar';
-import { StickyNavbar } from './StickyNavbar';
+import { StaticNavbar } from '../common/Navbar/StaticNavbar';
+import { StickyNavbar } from '../common/Navbar/StickyNavbar';
 import { useWindowSize } from '../../hooks/useWindowSize';
+import './style.css';
 const Header = () => {
     const scrollPosition = useScrollPosition();
     const { width: windowWidth } = useWindowSize();

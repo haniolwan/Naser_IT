@@ -1,25 +1,27 @@
 import {
     Header,
     AboutUs,
-    Services,
+    Solutions,
     Contact,
     OurClients,
     Tools,
     Footer,
     OurProcess
-} from './../../';
+} from '../..';
 
-export const Landing = () => {
+const Landing = () => {
     return (
         <>
             <Header />
             <OurClients />
             <AboutUs />
             <OurProcess />
-            <Services />
+            <Solutions />
             <Contact />
             <Tools />
             <Footer />
         </>
     )
 }
+
+export default Landing;
