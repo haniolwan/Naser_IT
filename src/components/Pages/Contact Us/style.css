@@ -1,0 +1,59 @@
+.content {
+    margin: 0 !important;
+}
+
+.error-form-msg {
+    position: absolute;
+    color: red;
+    top: 100px;
+}
+
+.success-form-msg {
+    position: absolute;
+    color: green;
+    top: 100px;
+}
+
+.contact-page-row {
+    padding-top: 80px;
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* For Ipad */
+
+    .contact-page-row {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding-top: 0;
+    }
+
+    .error-form-msg {
+        top: 45px;
+    }
+
+    .success-form-msg {
+        top: 45px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Phones */
+    .contact-page-row {
+        flex-direction: column;
+        padding-top: 40px;
+        gap: 25px;
+    }
+
+    .error-form-msg {
+        top: 80px;
+    }
+
+    .success-form-msg {
+        top: 70px;
+    }
+}

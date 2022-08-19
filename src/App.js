@@ -12,6 +12,7 @@ import {
 } from 'react-router-dom';
 import {
   AboutUs,
+  ContactUs,
   Landing,
   Services,
   SingleService
@@ -44,11 +45,9 @@ function App() {
         <Route path="/services/ui-design/*" element={<SingleService title="Ui Design" />} >
           <Route path="*" element={<SingleService />} />
         </Route>
-        <Route path="/services" element={<Services/>} />
+        <Route path="/services" element={<Services />} />
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/contact" element={
-          <h1>Hello Contact Us</h1>
-        } />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
 
   );

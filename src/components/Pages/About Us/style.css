@@ -11,3 +11,33 @@
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* For Ipad */
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Phones */
+
+    .about-page-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .profile-img {
+        margin-bottom: 30px;
+    }
+
+    .services-header-text {
+        font-size: calc(3rem - 13px);
+    }
+
+    .about-page-content {
+        padding-top: 30px;
+    }
+}
