@@ -39,7 +39,7 @@
 
 .first-process-img-container {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     height: 11rem;
     width: 11rem;
@@ -57,7 +57,7 @@
 
 .third-process-img-container {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     height: 11rem;
     width: 11rem;

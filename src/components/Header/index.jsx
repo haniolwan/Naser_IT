@@ -26,15 +26,15 @@ const Header = () => {
             <Container>
                 <Row className="content">
                     <Col className="right-content">
-                        <div className="welcome-msg mb-4">
+                        <div className="welcome-msg mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in-out">
                             👋 Welcome to Naser IT
                         </div>
-                        <h1 className="title mb-4">
+                        <h1 className="title mb-4" data-aos="fade-up" data-aos-delay="700">
                             Work the way that works for you
                             <div className="aqua-line"></div>
                         </h1>
-                        <h3 className="description">Create, Build, Collaborate and ship products very faster </h3>
-                        <button type="button" className="btn btn-warning get-started-button">Get Started</button>
+                        <h3 className="description" data-aos="fade-up" data-aos-delay="900">Create, Build, Collaborate and ship products very faster </h3>
+                        <button type="button" className="btn btn-warning get-started-button" data-aos="fade-up" data-aos-delay="1100">Get Started</button>
                     </Col>
                     <Col className="left-content">
                         {/* <img src={headerImg} class="img-fluid header-image" alt="Header.jpg" /> */}

@@ -27,7 +27,7 @@ const Solutions = () => {
                     <Col>
                         {/* First Card */}
                         <ServiceCard
-                            url="/ui-design"
+                            url="/services/ui-design"
                             img={responsiveImg}
                             blob={<svg
                                 xmlns="http://wwww.w3.org/2000/svg"
@@ -44,7 +44,7 @@ const Solutions = () => {
 
                         {/* Forth Card */}
                         <ServiceCard
-                            url="/qaulity-assurance-testing"
+                            url="/services/qaulity-assurance-testing"
                             img={qaImg}
                             blob={<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="116px" height="81px">
                                 <path
@@ -59,7 +59,7 @@ const Solutions = () => {
                     <Col>
                         {/* Second Card */}
                         <ServiceCard
-                            url="/software-solutions"
+                            url="/services/software-solutions"
                             img={codeImg}
                             blob={<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="105px" height="80px">
                                 <path
@@ -73,7 +73,7 @@ const Solutions = () => {
                         />
                         {/* Fifth Card */}
                         <ServiceCard
-                            url="/software-maintenance"
+                            url="/services/software-maintenance"
                             img={designImg}
                             blob={<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="111px" height="79px">
                                 <path
@@ -89,7 +89,7 @@ const Solutions = () => {
                     <Col>
                         {/* Third Card */}
                         <ServiceCard
-                            url="/mobile-development"
+                            url="/services/mobile-development"
                             img={mobileImg}
                             blob={<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="119px" height="80px">
                                 <path className="icon-bg-shape third-blob"
@@ -102,7 +102,7 @@ const Solutions = () => {
                         />
                         {/* Sixth Card */}
                         <ServiceCard
-                            url="/consulting"
+                            url="/services/consulting"
                             img={handImg}
                             blob={<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="112px" height="81px">
                                 <path

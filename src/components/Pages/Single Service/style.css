@@ -210,7 +210,7 @@
 
 .nav-link {
     font-size: 16px;
-    font-weight: 350;
+    font-weight: 900;
 }
 
 @media only screen and (max-width: 600px) {
@@ -258,6 +258,8 @@
 
     .navigation-taps-container {
         width: 90%;
+        padding: 26px 12px;
+        margin-bottom: 3rem;
     }
 
     .process-section {
@@ -282,6 +284,18 @@
         background-image: linear-gradient(150deg, #f5fbffe6, rgba(255, 255, 255, 0));
         background-repeat: repeat-x;
         z-index: 1;
+    }
+
+    .first-tab-img {
+        width: 40%;
+    }
+
+    .second-tab-img {
+        width: 32%;
+    }
+
+    .third-tab-img {
+        width: 40%;
     }
 
 }

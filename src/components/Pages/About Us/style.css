@@ -1,0 +1,13 @@
+.about-page-content {
+    padding-top: 80px;
+}
+
+.profile-img {
+    height: auto;
+    width: 100%;
+}
+
+.about-page-img {
+    display: flex;
+    justify-content: center;
+}

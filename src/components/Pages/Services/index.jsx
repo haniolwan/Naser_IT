@@ -17,9 +17,9 @@ const Services = () => {
     const { width: windowWidth } = useWindowSize();
     return (
         <>
-            <div className="services-page-container">
+            {windowWidth <= 1024 ? <StickyNavbar /> : scrollPosition >= 30 ? <StickyNavbar /> : null}
+            <div className="services-page-container" data-aos="fade-down">
                 {windowWidth > 1024 && <StaticNavbar />}
-                {windowWidth <= 1024 ? <StickyNavbar /> : scrollPosition >= 30 ? <StickyNavbar /> : null}
                 <div className="heading-text">
                     <h1>Services</h1>
                     <p>
