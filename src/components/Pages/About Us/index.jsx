@@ -36,7 +36,7 @@ const AboutUs = () => {
                 </div>
             </div>
             <Container className="about-page-content">
-                <Row>
+                <Row className="about-page-row">
                     <Col className="about-page-img">
                         <img className="profile-img" src={profileImg} alt="Aboutus.png" />
                     </Col>
