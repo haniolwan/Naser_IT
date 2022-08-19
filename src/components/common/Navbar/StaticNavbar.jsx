@@ -19,10 +19,10 @@ export const StaticNavbar = () => {
                 <Toggle aria-controls="basic-navbar-nav" />
                 <Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto nav-items">
-                        <Link className={"text-light static-nav-link " + (pathname === '/' ? 'selected' : null)} href="/">Home</Link>
-                        <Link className={"text-light static-nav-link " + (pathname === '/services' ? 'selected' : null)} href="/services">Services</Link>
-                        <Link className={"text-light static-nav-link " + (pathname === '/about' ? 'selected' : null)} href="/about">About Us</Link>
-                        <Link className={"text-light static-nav-link " + (pathname === '/contact' ? 'selected' : null)} href="/contact">Contact Us</Link>
+                        <Link className={"text-light static-nav-link " + (pathname === '/' ? 'selected-static' : null)} href="/">Home</Link>
+                        <Link className={"text-light static-nav-link " + (pathname.includes('services') ? 'selected-static' : null)} href="/services">Services</Link>
+                        <Link className={"text-light static-nav-link " + (pathname === '/about' ? 'selected-static' : null)} href="/about">About Us</Link>
+                        <Link className={"text-light static-nav-link " + (pathname === '/contact' ? 'selected-static' : null)} href="/contact">Contact Us</Link>
                         <NavDropdown className="ms-auto language-dropdown" title="English" id="basic-nav-dropdown">
                             <Item href="#action/3.1">English</Item>
                             <Item href="#action/3.3">German</Item>

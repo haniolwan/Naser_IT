@@ -40,11 +40,11 @@ function App() {
     loading ?
       <Loading />
       : <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/ui-design/*" element={<SingleService title="Ui Design" />} >
+        <Route path="/" element={<Landing data-aos="fade-down" />} />
+        <Route path="/services/ui-design/*" element={<SingleService title="Ui Design" />} >
           <Route path="*" element={<SingleService />} />
         </Route>
-        <Route path="/services" element={<Services />} />
+        <Route path="/services" element={<Services/>} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={
           <h1>Hello Contact Us</h1>

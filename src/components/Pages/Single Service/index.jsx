@@ -19,6 +19,7 @@ import laptopImg from './../../../assets/laptop.png';
 import processArrowImg from '../../../assets/services/right-arrow.png';
 import webDesign from '../../../assets/web-design.jpg';
 import webDesign2 from '../../../assets/web-design2.jpg';
+
 import {
     Routes,
     Route
@@ -35,9 +36,9 @@ const SingleService = ({ title }) => {
     }
     return (
         <>
-            <div className="services-page-container">
+            {windowWidth <= 1024 ? <StickyNavbar /> : scrollPosition >= 30 ? <StickyNavbar /> : null}
+            <div className="services-page-container" data-aos="fade-down">
                 {windowWidth > 1024 && <StaticNavbar />}
-                {windowWidth <= 1024 ? <StickyNavbar /> : scrollPosition >= 30 ? <StickyNavbar /> : null}
                 <div className="heading-text">
                     <h1>{title}</h1>
                     <p>
@@ -92,7 +93,7 @@ const SingleService = ({ title }) => {
                         <div className="navigation-taps-content">
                             <NavigationTab
                                 title="Consultation"
-                                path="/ui-design/consultation"
+                                path="/services/ui-design/consultation"
                                 setTap={setTap}
                                 option={0}
                                 selectedTab={selectedTab}
@@ -102,7 +103,7 @@ const SingleService = ({ title }) => {
                             <img className={`process-arrow first-process-arrow ${selectedTab > 0 ? "highlighted" : ""}`} src={processArrowImg} alt="arrow.png" />
                             <NavigationTab
                                 title="Wire-frame"
-                                path="/ui-design/wire-frame"
+                                path="/services/ui-design/wire-frame"
                                 setTap={setTap}
                                 option={1}
                                 selectedTab={selectedTab}
@@ -112,7 +113,7 @@ const SingleService = ({ title }) => {
                             <img className={`process-arrow second-process-arrow ${selectedTab > 1 ? "highlighted" : ""}`} src={processArrowImg} alt="right-arrow.png" />
                             <NavigationTab
                                 title="Final Design"
-                                path="/ui-design/final-design"
+                                path="/services/ui-design/final-design"
                                 setTap={setTap}
                                 option={2}
                                 selectedTab={selectedTab}
@@ -135,7 +136,7 @@ const SingleService = ({ title }) => {
                         commodo consequat."
                             option={selectedTab}
                             nextOption={setTap}
-                            nextPath="ui-design/wire-frame"
+                            nextPath="services/ui-design/wire-frame"
                         />
                     } />
                     <Route path="/wire-frame" element={
@@ -149,7 +150,7 @@ const SingleService = ({ title }) => {
                         commodo consequat."
                             option={selectedTab}
                             nextOption={setTap}
-                            nextPath="ui-design/final-design"
+                            nextPath="services/ui-design/final-design"
                         />} />
                     <Route path="/final-design" element={
                         <ProcessCard
@@ -162,7 +163,7 @@ const SingleService = ({ title }) => {
                         commodo consequat."
                             option={selectedTab}
                             nextOption={setTap}
-                            nextPath="ui-design/consultation"
+                            nextPath="services/ui-design/consultation"
                         />} />
                     <Route path="/*" element={
                         <>
@@ -176,7 +177,7 @@ const SingleService = ({ title }) => {
                        commodo consequat."
                                 option={selectedTab}
                                 nextOption={setTap}
-                                nextPath="ui-design/wire-frame"
+                                nextPath="services/ui-design/wire-frame"
                             />
                         </>} />
                 </Routes>
