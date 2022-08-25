@@ -1,0 +1,39 @@
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    /*  */
+    background: rgb(126, 139, 138);
+    background: -moz-radial-gradient(circle, rgba(126, 139, 138, 1) 6%, rgba(114, 116, 106, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(126, 139, 138, 1) 6%, rgba(114, 116, 106, 1) 100%);
+    background: radial-gradient(circle, rgba(126, 139, 138, 1) 6%, rgba(114, 116, 106, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7e8b8a", endColorstr="#72746a", GradientType=1);
+}
+
+.not-found-content {
+    width: 47%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /* For Ipad */
+    .not-found-content {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Phones */
+    .not-found-content {
+        width: 100%;
+    }
+}

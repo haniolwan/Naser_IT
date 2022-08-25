@@ -8,12 +8,12 @@ import Footer from './Footer';
 import OurProcess from './Our Process';
 
 export {
-    Header,
-    AboutUs,
-    Solutions,
-    Contact,
-    OurClients,
-    Tools,
-    Footer,
-    OurProcess
-}
+  Header,
+  AboutUs,
+  Solutions,
+  Contact,
+  OurClients,
+  Tools,
+  Footer,
+  OurProcess,
+};
