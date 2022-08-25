@@ -1,6 +1,7 @@
 import './style.css';
 const Loading = () => {
     return (
+        <>
             <div className="loading-screen">
                 <div className="loader">
                     <h1 className="loading-title">NASER IT</h1>
@@ -10,6 +11,7 @@ const Loading = () => {
                     <div className="inner three"></div>
                 </div>
             </div>
+        </>
     )
 }
 
