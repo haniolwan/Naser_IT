@@ -3,6 +3,7 @@ import {
     Row,
     Col
 } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 import ellipseImg from '../../assets/ellipse.png';
 import rectangleImg from '../../assets/rectangle.png';
 import cursorImg from '../../assets/cursor.png';
@@ -15,6 +16,8 @@ import './style.css';
 const Header = () => {
     const scrollPosition = useScrollPosition();
     const { width: windowWidth } = useWindowSize();
+    const { t } = useTranslation();
+
     return (
         <div className="header">
             {windowWidth > 1024 && <StaticNavbar />}
@@ -27,14 +30,14 @@ const Header = () => {
                 <Row className="content">
                     <Col className="right-content">
                         <div className="welcome-msg mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in-out">
-                            👋 Welcome to Naser IT
+                            {t('Header.Content.Welcome')}
                         </div>
                         <h1 className="title mb-4" data-aos="fade-up" data-aos-delay="700">
-                            Work the way that works for you
+                            {t('Header.Content.Advertise')}
                             <div className="aqua-line"></div>
                         </h1>
-                        <h3 className="description" data-aos="fade-up" data-aos-delay="900">Create, Build, Collaborate and ship products very faster </h3>
-                        <button type="button" className="btn btn-warning get-started-button" data-aos="fade-up" data-aos-delay="1100">Get Started</button>
+                        <h3 className="description" data-aos="fade-up" data-aos-delay="900">{t('Header.Content.Motive')}</h3>
+                        <button type="button" className="btn btn-warning get-started-button" data-aos="fade-up" data-aos-delay="1100">{t('Header.Content.Get Started')}</button>
                     </Col>
                     <Col className="left-content">
                         {/* <img src={headerImg} class="img-fluid header-image" alt="Header.jpg" /> */}

@@ -5,7 +5,7 @@ const ServiceCard = ({ url, img, blob, title, details, classes = '' }) => {
     const navigate = useNavigate();
     const navigation = (event) => {
         event.preventDefault();
-        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         return navigate(url);
     }
     return (

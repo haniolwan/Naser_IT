@@ -1,6 +1,9 @@
 import {
   useState,
-  useEffect
+  useEffect,
+  lazy,
+  useContext,
+  createContext
 } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -17,39 +20,47 @@ import {
   Services,
   SingleService
 } from './components/Pages/';
-
+import i18n from './i18n';
 import { Loading } from './components/common';
-
-
+import LocaleContext from './Context/LocaleContext';
 
 function App() {
+  const [locale, setLocale] = useState(i18n.language);
+  i18n.on('languageChanged', (lng) => setLocale(i18n.language));
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const loader = setTimeout(() => {
-      setLoading(false);
-    }, 550)
-    return () => clearTimeout(loader);
-  }, [])
+      setLoading(() => !loading);
+      return clearTimeout(() => loader);
+    }, 700);
+  }, []);
 
   useEffect(() => {
     Aos.init({
       duration: 500,
       once: true
     });
-  }, [])
-  return (
-    loading ?
-      <Loading />
-      : <Routes>
-        <Route path="/" element={<Landing data-aos="fade-down" />} />
-        <Route path="/services/ui-design/*" element={<SingleService title="Ui Design" />} >
-          <Route path="*" element={<SingleService />} />
-        </Route>
-        <Route path="/services" element={<Services />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/contact" element={<ContactUs />} />
-      </Routes>
+  }, []);
 
+  return (
+    <LocaleContext.Provider value={{ locale, setLocale }}>
+      {
+        !loading ?
+          <Routes>
+            <Route path="/" element={<Landing data-aos="fade-down" />} />
+            <Route path="/services/ui-design/*" element={
+              <SingleService title="Ui Design" />
+            } >
+              <Route path="*" element={<SingleService />} />
+            </Route>
+            <Route path="/services" element={<Services />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<ContactUs />} />
+          </Routes>
+          : <Loading />
+      }
+    </LocaleContext.Provider>
   );
 }
 

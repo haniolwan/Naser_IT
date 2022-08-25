@@ -1,0 +1,16 @@
+{
+    "Header": {
+        "Nav": {
+            "item1": "Heimat",
+            "item2": "Dienstleistungen",
+            "item3": "über uns",
+            "item4": "kontaktiere uns"
+        },
+        "Content": {
+            "Welcome": "👋 Willkommen zu Naser IT",
+            "Advertise": "Arbeiten Sie so, wie es für Sie funktioniert",
+            "Motive": "Erstellen, bauen, kollaborieren und versenden Sie Produkte sehr viel schneller",
+            "Get Started": "Loslegen"
+        }
+    }
+}
