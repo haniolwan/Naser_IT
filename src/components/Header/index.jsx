@@ -29,7 +29,7 @@ function Header() {
       <img src={polygonImg} className="img-fluid polygon-image" alt="Header.jpg" />
       <Container>
         <Row className="content">
-          <Col className="right-content">
+          <Col className="header-right-content">
             <div className="welcome-msg mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in-out">
               {t('Header.Content.Welcome')}
             </div>
@@ -40,7 +40,7 @@ function Header() {
             <h3 className="description" data-aos="fade-up" data-aos-delay="900">{t('Header.Content.Motive')}</h3>
             <button type="button" className="btn btn-warning get-started-button" data-aos="fade-up" data-aos-delay="1100">{t('Header.Content.Get Started')}</button>
           </Col>
-          <Col className="left-content">
+          <Col className="header-left-content">
             {/* <img src={headerImg} class="img-fluid header-image" alt="Header.jpg" /> */}
           </Col>
         </Row>

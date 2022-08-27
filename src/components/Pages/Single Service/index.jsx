@@ -157,7 +157,7 @@ function SingleService({ title }) {
                 nextOption={setTap}
                 nextPath="services/ui-design/wire-frame"
               />
-                        )}
+            )}
           />
           <Route
             path="/wire-frame"
@@ -174,7 +174,7 @@ function SingleService({ title }) {
                 nextOption={setTap}
                 nextPath="services/ui-design/final-design"
               />
-                        )}
+            )}
           />
           <Route
             path="/final-design"
@@ -191,7 +191,7 @@ function SingleService({ title }) {
                 nextOption={setTap}
                 nextPath="services/ui-design/consultation"
               />
-                        )}
+            )}
           />
           <Route
             path="/*"
@@ -208,7 +208,7 @@ function SingleService({ title }) {
                 nextOption={setTap}
                 nextPath="services/ui-design/wire-frame"
               />
-                        )}
+            )}
           />
         </Routes>
       </Container>
@@ -220,5 +220,9 @@ function SingleService({ title }) {
 export default SingleService;
 
 SingleService.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
+};
+
+SingleService.defaultProps = {
+  title: 'Default Card Title',
 };

@@ -205,6 +205,36 @@
     }
 }
 
+@media only screen and (min-device-width: 601px) and (max-device-width: 767px) {
+    .services-content {
+        flex-direction: column;
+    }
+
+    .first-service-img {
+        width: 12%;
+    }
+
+    .second-service-img {
+        width: 12%;
+    }
+
+    .third-service-img {
+        width: 12%;
+    }
+
+    .forth-service-img {
+        width: 12%;
+    }
+
+    .fifth-service-img {
+        width: 12%;
+    }
+
+    .sixth-service-img {
+        width: 12%;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     /* For Ipads */
 
