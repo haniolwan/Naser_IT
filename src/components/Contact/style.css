@@ -102,6 +102,10 @@
     height: 100%;
     position: static;
   }
+  .contact-us-content {
+    position: static;
+    flex-direction: column;
+  }
 }
 
 

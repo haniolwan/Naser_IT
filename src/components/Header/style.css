@@ -15,9 +15,9 @@
 
 .nav-items {
     display: flex;
-    width: 75%;
+    width: 71%;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 
@@ -146,15 +146,15 @@
     width: 49.31px;
     height: 47.36px;
     position: relative;
-    left: 450px;
-    top: 230px;
+    left: 613px;
+    top: 259px;
 }
 
 .polygon-image {
     width: 37.76px;
     height: 37.13px;
     position: relative;
-    left: 365px;
+    left: 450px;
     top: 380px;
 }
 

@@ -25,7 +25,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 45px;
+    gap: 80px;
 }
 
 .dspace-tool {
@@ -113,9 +113,13 @@
     }
 
     .all-tools {
-        padding: 20px;
+        display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 53px;
         flex-wrap: wrap;
+        padding-top: 20px;
     }
 
     .tools-content {
@@ -176,6 +180,8 @@
 
     .all-tools {
         flex-wrap: wrap;
+        padding: 20px;
+        gap: 45px;
     }
 
     .single-client {
