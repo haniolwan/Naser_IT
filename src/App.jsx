@@ -19,7 +19,7 @@ import {
   PageNotFound,
 } from './components/Pages';
 import i18n from './i18n';
-import { Loading } from './components/common';
+import { BackToTopButton, Loading } from './components/common';
 import LocaleContext from './Context/LocaleContext';
 
 function App() {
@@ -44,22 +44,26 @@ function App() {
   return (
     // eslint-disable-next-line react/jsx-no-constructed-context-values
     <LocaleContext.Provider value={{ locale, setLocale }}>
+
       {
         !loading
           ? (
-            <Routes>
-              <Route path="/" element={<Landing data-aos="fade-down" />} />
-              <Route
-                path="/services/ui-design/*"
-                element={<SingleService title="Ui Design" />}
-              >
-                <Route path="*" element={<SingleService />} />
-              </Route>
-              <Route path="/services" element={<Services />} />
-              <Route path="/about" element={<AboutUs />} />
-              <Route path="/contact" element={<ContactUs />} />
-              <Route path="*" element={<PageNotFound />} />
-            </Routes>
+            <>
+              <Routes>
+                <Route path="/" element={<Landing data-aos="fade-down" />} />
+                <Route
+                  path="/services/ui-design/*"
+                  element={<SingleService title="Ui Design" />}
+                >
+                  <Route path="*" element={<SingleService />} />
+                </Route>
+                <Route path="/services" element={<Services />} />
+                <Route path="/about" element={<AboutUs />} />
+                <Route path="/contact" element={<ContactUs />} />
+                <Route path="*" element={<PageNotFound />} />
+              </Routes>
+              <BackToTopButton />
+            </>
           ) : <Loading />
       }
     </LocaleContext.Provider>
