@@ -15,7 +15,7 @@
 
 .nav-items {
     display: flex;
-    width: 71%;
+    width: 75%;
     justify-content: center;
     gap: 30px;
 }
@@ -190,8 +190,6 @@
     .language-dropdown {
         margin-right: 100% !important;
     }
-
-
 }
 
 
