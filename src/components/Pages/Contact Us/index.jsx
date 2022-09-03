@@ -68,7 +68,6 @@ function ContactUs() {
               onClick={() => navigate('/')}
             >
               Home
-
             </span>
             <img className="right-arrow" src={rightArrowImg} alt="SP.png" />
             Contact us
@@ -78,14 +77,24 @@ function ContactUs() {
       <Container>
         <Row className="contact-page-row">
           <Col className="contact-form">
-            <Row className="content">
+            <Row className="contact-form-content">
               <Col className="contact-left-content">
                 <h1 className="contact-title">
                   Got a question? Get in touch
                 </h1>
                 <br />
-                {errorMsg && <p className="error-form-msg">{errorMsg}</p>}
-                {success && <p className="success-form-msg">We received your email and we`&apos;`ll contact you as soon as possible.</p>}
+                <div className="msg-container">
+                  {errorMsg && (
+                  <p className="error-form-msg">
+                    Your message has been successfully sent. We will contact you very soon!
+                  </p>
+                  )}
+                  {success && (
+                    <p className="success-form-msg">
+                      Your message has been successfully sent. We will contact you very soon!
+                    </p>
+                  )}
+                </div>
                 <Form className="contact-form" ref={form} onSubmit={submitForm}>
                   <InputGroup
                     className="mb-3 contact-first-row"
@@ -136,10 +145,10 @@ function ContactUs() {
                     </button>
                     {loading && <div className="spinner-border" role="status" />}
                     {success && (
-                    <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                      <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
-                      <path className="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                    </svg>
+                      <svg className="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle className="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                        <path className="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                      </svg>
                     )}
                   </div>
                 </Form>
@@ -152,7 +161,7 @@ function ContactUs() {
                 title="11"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.3325395304414!2d-122.01116148467422!3d37.33463524513264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb59127ce078f%3A0x18e1c3ce7becf1b!2sApple%20Park!5e0!3m2!1sen!2sin!4v1637309850935!5m2!1sen!2sin"
                 width="100%"
-                height="500"
+                height="450"
                 style={{ border: '0' }}
                 allowFullScreen=""
                 loading="lazy"
