@@ -1,25 +1,37 @@
 import {
-    Link
+  Link,
 } from 'react-router-dom';
-const NavigationTab = ({
-    title,
-    path,
-    setTap,
-    selectedTab,
-    option,
-    imgSrc,
-    classes
-}) => {
-    return (
-        <Link className="tab-link" to={path} onClick={() => setTap(option)}>
-            <div className={`nav-tap first-tap ${selectedTab === option || selectedTab > option ? "option-selected" : ""}`}>
-                <div className="nav-tap-background"></div>
-                <img className={classes} src={imgSrc} alt="nav-taps.png" />
-                <h5 className="tap-title">
-                    {title}
-                </h5>
-            </div>
-        </Link>
-    );
+import PropTypes from 'prop-types';
+
+function NavigationTab({
+  title,
+  path,
+  setTap,
+  selectedTab,
+  option,
+  imgSrc,
+  classes,
+}) {
+  return (
+    <Link className="tab-link" to={path} onClick={() => setTap(option)}>
+      <div className={`nav-tap first-tap ${selectedTab === option || selectedTab > option ? 'option-selected' : ''}`}>
+        <div className="nav-tap-background" />
+        <img className={classes} src={imgSrc} alt="nav-taps.png" />
+        <h5 className="tap-title">
+          {title}
+        </h5>
+      </div>
+    </Link>
+  );
 }
 export default NavigationTab;
+
+NavigationTab.propTypes = {
+  title: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
+  setTap: PropTypes.shape({ blob: PropTypes.string }).isRequired,
+  selectedTab: PropTypes.string.isRequired,
+  option: PropTypes.string.isRequired,
+  imgSrc: PropTypes.string.isRequired,
+  classes: PropTypes.string.isRequired,
+};

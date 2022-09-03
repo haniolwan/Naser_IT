@@ -82,7 +82,7 @@
     position: relative;
     top: 60px;
     left: 6px;
-    width: 18%;
+    width: 16%;
     filter: invert(74%) sepia(49%) saturate(2073%) hue-rotate(327deg) brightness(97%) contrast(104%);
 }
 
@@ -90,7 +90,7 @@
     position: relative;
     top: 67px;
     left: 0;
-    width: 18%;
+    width: 16%;
     filter: invert(78%) sepia(8%) saturate(3355%) hue-rotate(67deg) brightness(99%) contrast(83%);
 }
 
@@ -98,7 +98,7 @@
     position: relative;
     top: 67px;
     left: 0;
-    width: 18%;
+    width: 16%;
     filter: invert(41%) sepia(94%) saturate(1975%) hue-rotate(215deg) brightness(101%) contrast(95%);
 }
 
@@ -106,7 +106,7 @@
     position: relative;
     top: 67px;
     left: 0;
-    width: 18%;
+    width: 16%;
     filter: invert(59%) sepia(24%) saturate(2316%) hue-rotate(174deg) brightness(105%) contrast(96%);
 }
 
@@ -114,7 +114,7 @@
     position: relative;
     top: 67px;
     left: 0;
-    width: 18%;
+    width: 16%;
     filter: invert(41%) sepia(44%) saturate(3558%) hue-rotate(337deg) brightness(99%) contrast(96%);
 }
 
@@ -205,11 +205,48 @@
     }
 }
 
+@media only screen and (min-device-width: 601px) and (max-device-width: 767px) {
+    .services-content {
+        flex-direction: column;
+    }
+
+    .first-service-img {
+        width: 12%;
+    }
+
+    .second-service-img {
+        width: 12%;
+    }
+
+    .third-service-img {
+        width: 12%;
+    }
+
+    .forth-service-img {
+        width: 12%;
+    }
+
+    .fifth-service-img {
+        width: 12%;
+    }
+
+    .sixth-service-img {
+        width: 12%;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     /* For Ipads */
 
-    .service-card {
-        padding: 15px;
+    .services {
+        padding: 0;
+    }
+    .services-container{
+        padding-top: 60px;
+    }
+
+    .services-content {
+        flex-direction: column;
     }
 
     .card-title a {
@@ -217,26 +254,32 @@
     }
 
     .first-service-img {
-        top: 62px;
+        top: 65px;
+        width: 9%;
     }
 
     .second-service-img {
-        top: 63px;
+        top: 70px;
+        width: 9%;
     }
 
     .third-service-img {
-        top: 63px;
+        top: 70px;
+        width: 9%;
     }
 
     .forth-service-img {
-        top: 62px;
+        top: 70px;
+        width: 9%;
     }
 
     .fifth-service-img {
-        top: 60px;
+        top: 70px;
+        width: 9%;
     }
 
     .sixth-service-img {
-        top: 60px;
+        top: 65px;
+        width: 9%;
     }
 }

@@ -39,7 +39,7 @@ export default ServiceCard;
 ServiceCard.propTypes = {
   url: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
-  blob: PropTypes.string.isRequired,
+  blob: PropTypes.shape({ blob: PropTypes.string }).isRequired,
   title: PropTypes.string.isRequired,
   details: PropTypes.string.isRequired,
   classes: PropTypes.string.isRequired,

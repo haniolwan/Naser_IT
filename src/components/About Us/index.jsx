@@ -1,11 +1,10 @@
 import { Container, Row, Col } from 'react-bootstrap';
-import PropTypes from 'prop-types';
 import aboutImg from '../../assets/aboutImg.png';
 import './style.css';
 
-function AboutUs({ fade }) {
+function AboutUs() {
   return (
-    <Container className="mt-5" data-aos={fade}>
+    <Container className="mt-5">
       <Row className="about-us-content">
         <Col className="right-content">
           <img src={aboutImg} className="img-fluid about-image" alt="AboutUs.jpg" />
@@ -25,7 +24,3 @@ function AboutUs({ fade }) {
 }
 
 export default AboutUs;
-
-AboutUs.propTypes = {
-  fade: PropTypes.string.isRequired,
-};

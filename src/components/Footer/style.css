@@ -80,13 +80,16 @@
     }
 }
 
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
 
     /* For Ipads */
 
-    .footer{
+    .footer {
         padding: 30px;
     }
+
     .footer-content {
         display: flex;
         justify-content: center;

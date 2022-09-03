@@ -30,7 +30,7 @@ function StaticNavbar() {
   };
   return (
     <Navbar className="navbar navbar-dark py-4" expand="lg">
-      <Container>
+      <Container className="nav-container">
         <Brand href="/">Naser IT</Brand>
         <Toggle aria-controls="basic-navbar-nav" />
         <Collapse id="basic-navbar-nav">
