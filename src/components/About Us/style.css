@@ -1,37 +1,8 @@
-.about-us-content {
-    margin-top: 100px;
-}
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
-.about-image {
-    width: 80%;
-}
-
-.about-us-left-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 20%;
-}
-
-.about-text {
-    font: 30px;
-    line-height: 40px;
-}
-
-.about-description {
-    font-size: 20px;
-    line-height: 150%;
-}
-
-.about-description2 {
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 150%;
-}
-
-@media only screen and (max-width: 600px) {
-    /* Phones */
+    .about-us-content {
+        flex-direction: column;
+    }
 
     .right-content {
         position: static;
@@ -45,31 +16,72 @@
         margin-top: 50px;
         flex-direction: column;
     }
-
 }
 
-@media only screen and (min-device-width: 601px) and (max-device-width: 767px) {
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .about-us-content {
         flex-direction: column;
-    }
-
-    .right-content {
-        display: flex;
-        justify-content: center;
     }
 
     .about-us-left-content {
         margin-bottom: 20%;
     }
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    /* For Ipads */
     .right-content {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .about-us-left-content {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .right-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    .about-us-left-content {
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+
+    .right-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 1201px) {
+    .about-us-content {
+        flex-direction: row;
+    }
+
+    .about-us-left-content {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .right-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us-content {
+        margin-top: 100px;
     }
 
     .about-image {
@@ -77,8 +89,37 @@
     }
 
     .about-us-left-content {
-        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 20%;
     }
 
+    .about-text {
+        font: 30px;
+        line-height: 40px;
+    }
 
+    .about-description {
+        font-size: 20px;
+        line-height: 150%;
+    }
+
+    .about-description2 {
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 150%;
+    }
+}
+
+.about-us-content {
+    margin-bottom: 100px;
+}
+
+.about-us-left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
 }
