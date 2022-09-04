@@ -3,6 +3,7 @@ import {
   useState,
   useEffect,
   StrictMode,
+  React,
 } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -12,6 +13,8 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
+import WebFont from 'webfontloader';
+
 import {
   AboutUs,
   ContactUs,
@@ -20,7 +23,7 @@ import {
   SingleService,
   PageNotFound,
 } from './components/Pages';
-import i18n from './i18n';
+import i18n from './utils/i18n';
 import { BackToTopButton, Loading } from './components/common';
 import LocaleContext from './Context/LocaleContext';
 
@@ -40,6 +43,14 @@ function App() {
     Aos.init({
       duration: 500,
       once: true,
+    });
+  }, []);
+
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Nunito Sans'],
+      },
     });
   }, []);
 
