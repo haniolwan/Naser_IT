@@ -8,7 +8,7 @@ function AboutUs() {
     <Container className="mt-5">
       <Row className="about-us-content">
         <Col className="right-content">
-          <LazyLoadImage src={aboutImg} className="img-fluid about-image" alt="AboutUs.jpg" delayTime="2000" />
+          <LazyLoadImage src={aboutImg} className="img-fluid about-image" alt="AboutUs.jpg" loading="lazy" />
         </Col>
         <Col className="about-us-left-content">
           <h2 className="about-text">About us</h2>

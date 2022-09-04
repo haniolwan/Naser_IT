@@ -1,6 +1,8 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import {
   useState,
   useEffect,
+  StrictMode,
 } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -42,31 +44,31 @@ function App() {
   }, []);
 
   return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <LocaleContext.Provider value={{ locale, setLocale }}>
-
-      {
-        !loading
-          ? (
-            <>
-              <Routes>
-                <Route path="/" element={<Landing data-aos="fade-down" />} />
-                <Route
-                  path="/services/ui-design/*"
-                  element={<SingleService title="Ui Design" />}
-                >
-                  <Route path="*" element={<SingleService />} />
-                </Route>
-                <Route path="/services" element={<Services />} />
-                <Route path="/about" element={<AboutUs />} />
-                <Route path="/contact" element={<ContactUs />} />
-                <Route path="*" element={<PageNotFound />} />
-              </Routes>
-              <BackToTopButton />
-            </>
-          ) : <Loading />
-      }
-    </LocaleContext.Provider>
+    <StrictMode>
+      <LocaleContext.Provider value={{ locale, setLocale }}>
+        {
+          !loading
+            ? (
+              <>
+                <Routes>
+                  <Route path="/" element={<Landing data-aos="fade-down" />} />
+                  <Route
+                    path="/services/ui-design/*"
+                    element={<SingleService title="Ui Design" />}
+                  >
+                    <Route path="*" element={<SingleService />} />
+                  </Route>
+                  <Route path="/services" element={<Services />} />
+                  <Route path="/about" element={<AboutUs />} />
+                  <Route path="/contact" element={<ContactUs />} />
+                  <Route path="*" element={<PageNotFound />} />
+                </Routes>
+                <BackToTopButton />
+              </>
+            ) : <Loading />
+        }
+      </LocaleContext.Provider>
+    </StrictMode>
   );
 }
 
