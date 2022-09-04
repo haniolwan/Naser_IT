@@ -1,6 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import aboutImg from '../../assets/aboutImg.png';
+import img from '../../assets/Header/aboutImg.png';
+import placeholder from '../../assets/Header/about-placeholder.jpg';
+
 import './style.css';
 
 function AboutUs() {
@@ -8,7 +10,11 @@ function AboutUs() {
     <Container className="mt-5">
       <Row className="about-us-content">
         <Col className="right-content">
-          <LazyLoadImage src={aboutImg} className="img-fluid about-image" alt="AboutUs.jpg" loading="lazy" />
+          <LazyLoadImage
+            src={img}
+            placeholderSrc={placeholder}
+            alt="AboutUs.jpg"
+          />
         </Col>
         <Col className="about-us-left-content">
           <h2 className="about-text">About us</h2>
