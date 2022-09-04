@@ -7,6 +7,7 @@ import './style.css';
 
 function AboutUs() {
   return (
+
     <Container className="mt-5">
       <Row className="about-us-content">
         <Col className="right-content">
