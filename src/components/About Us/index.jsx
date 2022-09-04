@@ -2,7 +2,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import img from '../../assets/Header/aboutImg.png';
 import placeholder from '../../assets/Header/about-placeholder.jpg';
-
 import './style.css';
 
 function AboutUs() {
@@ -12,7 +11,7 @@ function AboutUs() {
       <Row className="about-us-content">
         <Col className="right-content">
           <LazyLoadImage
-            className="w-100"
+            className="about-img"
             src={img}
             placeholderSrc={placeholder}
             alt="AboutUs.jpg"
