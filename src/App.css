@@ -73,7 +73,7 @@
 .back-top-img {
   filter: invert(89%) sepia(79%) saturate(0%) hue-rotate(353deg) brightness(97%) contrast(111%);
   width: 65%;
-  margin-top: 8px;
+  margin-top: 15%;
 }
 
 @media (min-width: 500px) {

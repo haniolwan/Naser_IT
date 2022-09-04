@@ -46,7 +46,7 @@ function Contact() {
   };
   return (
     <Container className="mt-5">
-      <Row className="">
+      <Row className="contact-content">
         <Col className="contact-left-content">
           <h1 className="contact-title">
             Got a question? Get in touch
