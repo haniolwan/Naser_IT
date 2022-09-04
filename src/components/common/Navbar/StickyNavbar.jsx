@@ -37,7 +37,6 @@ function StickyNavbar() {
       <Container className="bg-light">
         <Brand href="/">Naser IT</Brand>
         <Toggle aria-controls="basic-navbar-nav" />
-
         <Collapse id="basic-navbar-nav">
           <Nav className="ms-auto nav-items">
             <Link className={`sticky-link ${pathname === '/' ? 'selected-sticky' : null}`} href="/">{t('Header.Nav.item1')}</Link>
