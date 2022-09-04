@@ -4,6 +4,7 @@ import {
   Container,
 } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {
   Footer,
 } from '../..';
@@ -34,9 +35,8 @@ function AboutUs() {
               onClick={() => navigate('/')}
             >
               Home
-
             </span>
-            <img className="right-arrow" src={rightArrowImg} alt="SP.png" />
+            <LazyLoadImage className="right-arrow" src={rightArrowImg} alt="SP.png" />
             About us
           </p>
         </div>
@@ -44,7 +44,7 @@ function AboutUs() {
       <Container className="about-page-content">
         <Row className="about-page-row">
           <Col className="about-page-img">
-            <img className="profile-img" src={profileImg} alt="Aboutus.png" />
+            <LazyLoadImage className="profile-img" src={profileImg} alt="Aboutus.png" />
           </Col>
           <Col className="services-left-content">
             <div className="services-header">

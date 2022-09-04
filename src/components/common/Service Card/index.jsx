@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import rightArrowImg from '../../../assets/services/right-arrow.png';
 
 function ServiceCard({
@@ -18,7 +19,7 @@ function ServiceCard({
   };
   return (
     <div className="service-card" role="presentation" data-aos="fade-up" onClick={navigation}>
-      <img className={`service-img ${classes}`} src={img} alt="service.png" />
+      <LazyLoadImage className={`service-img ${classes}`} src={img} alt="service.png" />
       <div className="card-icon-container">
         {blob}
       </div>
@@ -28,7 +29,7 @@ function ServiceCard({
       </p>
       <a className="card-dicover-link" href="/" onClick={navigation}>
         Discover Now
-        <img className="arrow-img" src={rightArrowImg} alt="arrow.png" />
+        <LazyLoadImage className="arrow-img" src={rightArrowImg} alt="arrow.png" />
       </a>
     </div>
   );

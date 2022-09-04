@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import upArrow from '../../../assets/up-arrow.png';
 import useScrollPosition from '../../../hooks/useScrollPosition';
 
@@ -11,7 +12,7 @@ function BackToTopButton() {
       id="button"
       onClick={() => window.scrollTo(0, 0)}
     >
-      <img className="back-top-img" src={upArrow} alt="back-to-top.png" />
+      <LazyLoadImage className="back-top-img" src={upArrow} alt="back-to-top.png" />
     </div>
 
   );

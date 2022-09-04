@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {
   Solutions,
   Footer,
@@ -31,7 +32,7 @@ function Services() {
               Home
 
             </span>
-            <img className="right-arrow" src={rightArrowImg} alt="SP.png" />
+            <LazyLoadImage className="right-arrow" src={rightArrowImg} alt="SP.png" />
             Services
           </p>
         </div>

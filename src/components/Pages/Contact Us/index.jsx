@@ -5,6 +5,7 @@ import {
   Form,
   InputGroup,
 } from 'react-bootstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useNavigate } from 'react-router-dom';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
@@ -69,7 +70,7 @@ function ContactUs() {
             >
               Home
             </span>
-            <img className="right-arrow" src={rightArrowImg} alt="SP.png" />
+            <LazyLoadImage className="right-arrow" src={rightArrowImg} alt="SP.png" />
             Contact us
           </p>
         </div>
@@ -85,9 +86,9 @@ function ContactUs() {
                 <br />
                 <div className="msg-container">
                   {errorMsg && (
-                  <p className="error-form-msg">
-                    Your message has been successfully sent. We will contact you very soon!
-                  </p>
+                    <p className="error-form-msg">
+                      Your message has been successfully sent. We will contact you very soon!
+                    </p>
                   )}
                   {success && (
                     <p className="success-form-msg">
