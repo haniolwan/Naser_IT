@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {
   Link,
 } from 'react-router-dom';
@@ -16,7 +17,7 @@ function NavigationTab({
     <Link className="tab-link" to={path} onClick={() => setTap(option)}>
       <div className={`nav-tap first-tap ${selectedTab === option || selectedTab > option ? 'option-selected' : ''}`}>
         <div className="nav-tap-background" />
-        <img className={classes} src={imgSrc} alt="nav-taps.png" />
+        <LazyLoadImage className={classes} src={imgSrc} alt="nav-taps.png" />
         <h5 className="tap-title">
           {title}
         </h5>

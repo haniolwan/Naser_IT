@@ -7,6 +7,7 @@ import {
   Form,
   InputGroup,
 } from 'react-bootstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import contactImg from '../../assets/contact.png';
 
 import './style.css';
@@ -51,14 +52,8 @@ function Contact() {
             Got a question? Get in touch
           </h1>
           <br />
-          {
-                        errorMsg
-                        && <p className="text-danger">{errorMsg}</p>
-                    }
-          {
-                        success
-                        && <p className="text-success">We received your email and we&apos;ll contact you as soon as possible.</p>
-                    }
+          {errorMsg && <p className="text-danger">{errorMsg}</p>}
+          {success && <p className="text-success">We received your email and we&apos;ll contact you as soon as possible.</p>}
           <Form className="contact-form" ref={form} onSubmit={submitForm}>
             <InputGroup
               className="mb-3 contact-first-row"
@@ -118,7 +113,7 @@ function Contact() {
           </Form>
         </Col>
         <Col className="contact-right-content">
-          <img src={contactImg} className="fa-beat-fade img-fluid contact-img" alt="AboutUs.jpg" />
+          <LazyLoadImage src={contactImg} className="fa-beat-fade img-fluid contact-img" alt="AboutUs.jpg" />
         </Col>
       </Row>
     </Container>

@@ -3,6 +3,7 @@ import {
   Row,
   Col,
 } from 'react-bootstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import logo from '../../assets/footer/footer-logo.png';
 import facebook from '../../assets/footer/facebook.png';
 import twitter from '../../assets/footer/twitter.png';
@@ -17,7 +18,7 @@ function Footer() {
         <Row className="footer-content">
           <Col className="first-section-footer">
             <div className="footer-logo">
-              <img src={logo} alt="Footer.png" />
+              <LazyLoadImage src={logo} alt="Footer.png" />
               <h1 className="footer-section-title">NASER IT</h1>
             </div>
             <p className="footer-discription">
@@ -26,13 +27,13 @@ function Footer() {
             </p>
             <div className="socials">
               <a href="facebook.com" target="_blank">
-                <img src={facebook} alt="Footer.png" />
+                <LazyLoadImage src={facebook} alt="Footer.png" />
               </a>
               <a href="twitter.com" target="_blank">
-                <img src={twitter} alt="Footer.png" />
+                <LazyLoadImage src={twitter} alt="Footer.png" />
               </a>
               <a href="instagram.com" target="_blank">
-                <img src={instagram} alt="Footer.png" />
+                <LazyLoadImage src={instagram} alt="Footer.png" />
               </a>
             </div>
           </Col>

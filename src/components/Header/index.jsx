@@ -3,6 +3,7 @@ import {
   Row,
   Col,
 } from 'react-bootstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTranslation } from 'react-i18next';
 import ellipseImg from '../../assets/ellipse.png';
 import rectangleImg from '../../assets/rectangle.png';
@@ -12,6 +13,7 @@ import useScrollPosition from '../../hooks/useScrollPosition';
 import StaticNavbar from '../common/Navbar/StaticNavbar';
 import StickyNavbar from '../common/Navbar/StickyNavbar';
 import useWindowSize from '../../hooks/useWindowSize';
+
 import './style.css';
 
 function Header() {
@@ -23,10 +25,10 @@ function Header() {
     <div className="header">
       {windowWidth > 1024 && <StaticNavbar />}
       {windowWidth <= 1024 || scrollPosition >= 30 ? <StickyNavbar /> : null}
-      <img src={ellipseImg} className="img-fluid ellipse-image" alt="Header.jpg" />
-      <img src={rectangleImg} className="img-fluid rectangle-image" alt="Header.jpg" />
-      <img src={cursorImg} className="img-fluid cursor-image" alt="Header.jpg" />
-      <img src={polygonImg} className="img-fluid polygon-image" alt="Header.jpg" />
+      <LazyLoadImage src={ellipseImg} className="img-fluid ellipse-image" alt="Header.jpg" />
+      <LazyLoadImage src={rectangleImg} className="img-fluid rectangle-image" alt="Header.jpg" />
+      <LazyLoadImage src={cursorImg} className="img-fluid cursor-image" alt="Header.jpg" />
+      <LazyLoadImage src={polygonImg} className="img-fluid polygon-image" alt="Header.jpg" />
       <Container>
         <Row className="content">
           <Col className="header-right-content">
@@ -41,7 +43,7 @@ function Header() {
             <button type="button" className="btn btn-warning get-started-button" data-aos="fade-up" data-aos-delay="1100">{t('Header.Content.Get Started')}</button>
           </Col>
           <Col className="header-left-content">
-            {/* <img src={headerImg} class="img-fluid header-image" alt="Header.jpg" /> */}
+            {/* <img src={headerImg} className="img-fluid header-image" alt="Header.jpg" /> */}
           </Col>
         </Row>
       </Container>

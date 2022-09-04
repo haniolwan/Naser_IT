@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {
   Col,
   Row,
@@ -7,6 +8,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import processArrowImg from '../../../assets/services/right-arrow.png';
+
 import './style.css';
 
 function ProcessCard({
@@ -47,7 +49,7 @@ function ProcessCard({
       ) : (
         <Row className="process-details-content">
           <Col>
-            <img className="process-desc-img" src={imgSrc} alt="web design.png" />
+            <LazyLoadImage className="process-desc-img" src={imgSrc} alt="web design.png" />
           </Col>
           <Col className="single-process-description">
             <h1 className="subheading-process-title">{title}</h1>
@@ -56,7 +58,7 @@ function ProcessCard({
             <Link to={`/${nextPath}`}>
               <h4 className="text-only-btn" role="presentation" onClick={() => nextOption(option === 2 ? 0 : option + 1)}>
                 Next Process
-                <img className="process-arrow second-process-arrow" src={processArrowImg} alt="right-arrow.png" />
+                <LazyLoadImage className="process-arrow second-process-arrow" src={processArrowImg} alt="right-arrow.png" />
               </h4>
             </Link>
           </Col>

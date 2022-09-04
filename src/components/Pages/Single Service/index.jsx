@@ -3,6 +3,7 @@ import {
   Col,
   Row,
 } from 'react-bootstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useState } from 'react';
 import {
   useNavigate,
@@ -51,16 +52,15 @@ function SingleService({ title }) {
               Home
 
             </span>
-            <img className="right-arrow" src={rightArrowImg} alt="SP.png" />
+            <LazyLoadImage className="right-arrow" src={rightArrowImg} alt="SP.png" />
             <span
               className="home-link"
               role="presentation"
               onClick={() => navigate('/services')}
             >
               Services
-
             </span>
-            <img className="right-arrow" src={rightArrowImg} alt="SP.png" />
+            <LazyLoadImage className="right-arrow" src={rightArrowImg} alt="SP.png" />
             {title}
           </p>
         </div>
@@ -80,22 +80,22 @@ function SingleService({ title }) {
               </p>
               <ul>
                 <li>
-                  <img className="list-icons" src={computerImg} alt="services.png" />
+                  <LazyLoadImage className="list-icons" src={computerImg} alt="services.png" />
                   One design for your desktop, tab and mobile.
                 </li>
                 <li>
-                  <img className="list-icons" src={computerImg} alt="services.png" />
+                  <LazyLoadImage className="list-icons" src={computerImg} alt="services.png" />
                   Beautiful and modern design that makes difference.
                 </li>
                 <li>
-                  <img className="list-icons" src={computerImg} alt="services.png" />
+                  <LazyLoadImage className="list-icons" src={computerImg} alt="services.png" />
                   Boost your sales with strategically built user experience.
                 </li>
               </ul>
             </div>
           </Col>
           <Col className="process-header-img">
-            <img className="processes-section-header-img" src={webDesign} alt="Service.png" />
+            <LazyLoadImage className="processes-section-header-img" src={webDesign} alt="Service.png" />
           </Col>
         </Row>
         <Row className="services-process-section">
@@ -117,7 +117,7 @@ function SingleService({ title }) {
                 imgSrc={brainstormingImg}
                 classes="service-tap-img first-tab-img"
               />
-              <img className={`process-arrow first-process-arrow ${selectedTab > 0 ? 'highlighted' : ''}`} src={processArrowImg} alt="arrow.png" />
+              <LazyLoadImage className={`process-arrow first-process-arrow ${selectedTab > 0 ? 'highlighted' : ''}`} src={processArrowImg} alt="arrow.png" />
               <NavigationTab
                 title="Wire-frame"
                 path="/services/ui-design/wire-frame"
@@ -127,7 +127,7 @@ function SingleService({ title }) {
                 imgSrc={wireframingImg}
                 classes="service-tap-img second-tab-img"
               />
-              <img className={`process-arrow second-process-arrow ${selectedTab > 1 ? 'highlighted' : ''}`} src={processArrowImg} alt="right-arrow.png" />
+              <LazyLoadImage className={`process-arrow second-process-arrow ${selectedTab > 1 ? 'highlighted' : ''}`} src={processArrowImg} alt="right-arrow.png" />
               <NavigationTab
                 title="Final Design"
                 path="/services/ui-design/final-design"
@@ -140,7 +140,6 @@ function SingleService({ title }) {
             </div>
           </div>
         </Row>
-
         <Routes>
           <Route
             path="/"

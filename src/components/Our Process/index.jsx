@@ -3,6 +3,7 @@ import {
   Row,
   Col,
 } from 'react-bootstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import noteImg from '../../assets/processes/note.png';
 import sectionImg from '../../assets/processes/processes-section.jpg';
 import researchImg from '../../assets/processes/research.png';
@@ -24,7 +25,7 @@ function OurProcess() {
           {/* Analysis & Design */}
           <div className="single-process" data-aos="fade-down">
             <div className="first-process-img-container">
-              <img className="first-process-img" src={noteImg} alt="Process.png" />
+              <LazyLoadImage className="first-process-img" src={noteImg} alt="Process.png" />
             </div>
             <div className="process-description">
               <h2>
@@ -70,7 +71,7 @@ function OurProcess() {
               </p>
             </div>
             <div className="second-process-img-container">
-              <img className="second-process-img" src={researchImg} alt="Process.png" />
+              <LazyLoadImage className="second-process-img" src={researchImg} alt="Process.png" />
             </div>
           </div>
           <svg x="0px" y="0px" width="312px" height="130px" className="second-dashed-lines">
@@ -96,7 +97,7 @@ function OurProcess() {
           {/* Testing & Launch */}
           <div className="single-process" data-aos="fade-down">
             <div className="third-process-img-container">
-              <img className="third-processs-img" src={profilesImg} alt="Process.png" />
+              <LazyLoadImage className="third-processs-img" src={profilesImg} alt="Process.png" />
             </div>
             <div className="process-description">
               <h2>
@@ -111,7 +112,7 @@ function OurProcess() {
           </div>
         </Col>
         <Col className="process-background">
-          <img className="process-section-img" src={sectionImg} alt="Process.png" />
+          <LazyLoadImage className="process-section-img" src={sectionImg} alt="Process.png" />
         </Col>
       </Row>
     </Container>
