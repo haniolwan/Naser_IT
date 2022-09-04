@@ -5,7 +5,9 @@
     }
 
     .right-content {
-        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .about-image {
@@ -16,10 +18,6 @@
         margin-top: 50px;
         flex-direction: column;
     }
-}
-
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
     .about-us-content {
         flex-direction: column;
     }
@@ -27,13 +25,8 @@
     .about-us-left-content {
         margin-bottom: 20%;
     }
-
-    .right-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
+
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .about-us-left-content {
