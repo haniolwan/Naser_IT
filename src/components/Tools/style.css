@@ -85,25 +85,25 @@
 
     .dspace-tool {
         height: 30px;
-        width: 130px;
+        width: 135px;
     }
 
     .vector-tool {
         height: 40px;
-        width: 130px
+        width: 135px
     }
 
     .lauter-tool {
-        width: 150px;
+        width: 140px;
     }
 
     .iso-tool {
         height: 60px;
-        width: 150px;
+        width: 146px;
     }
 
     .spice-tool {
-        width: 168px;
+        width: 156px;
     }
 }
 

@@ -1,9 +1,9 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {
   Col,
   Row,
   Placeholder,
 } from 'react-bootstrap';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';

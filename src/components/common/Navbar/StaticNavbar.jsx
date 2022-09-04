@@ -9,7 +9,7 @@ import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';
 import LocaleContext from '../../../Context/LocaleContext';
-import i18n from '../../../i18n';
+import i18n from '../../../utils/i18n';
 
 function StaticNavbar() {
   const { Link } = Nav;

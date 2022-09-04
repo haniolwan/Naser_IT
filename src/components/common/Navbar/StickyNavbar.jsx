@@ -8,7 +8,7 @@ import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';
 import LocaleContext from '../../../Context/LocaleContext';
-import i18n from '../../../i18n';
+import i18n from '../../../utils/i18n';
 
 function StickyNavbar() {
   const { Link } = Nav;
@@ -30,7 +30,7 @@ function StickyNavbar() {
 
   return (
     <Navbar
-      className="navbar navbar-expand-lg navbar-light py-4 bg-light shadow fixed-top sticky-navbar"
+      className="navbar navbar-expand-lg navbar-light py-2 bg-light shadow fixed-top sticky-navbar"
       expand="lg"
       data-aos="fade-down"
     >

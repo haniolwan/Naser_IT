@@ -1,6 +1,9 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import {
   useState,
   useEffect,
+  StrictMode,
+  React,
 } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -10,6 +13,8 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
+import WebFont from 'webfontloader';
+
 import {
   AboutUs,
   ContactUs,
@@ -18,7 +23,7 @@ import {
   SingleService,
   PageNotFound,
 } from './components/Pages';
-import i18n from './i18n';
+import i18n from './utils/i18n';
 import { BackToTopButton, Loading } from './components/common';
 import LocaleContext from './Context/LocaleContext';
 
@@ -41,32 +46,40 @@ function App() {
     });
   }, []);
 
-  return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
-    <LocaleContext.Provider value={{ locale, setLocale }}>
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Nunito Sans'],
+      },
+    });
+  }, []);
 
-      {
-        !loading
-          ? (
-            <>
-              <Routes>
-                <Route path="/" element={<Landing data-aos="fade-down" />} />
-                <Route
-                  path="/services/ui-design/*"
-                  element={<SingleService title="Ui Design" />}
-                >
-                  <Route path="*" element={<SingleService />} />
-                </Route>
-                <Route path="/services" element={<Services />} />
-                <Route path="/about" element={<AboutUs />} />
-                <Route path="/contact" element={<ContactUs />} />
-                <Route path="*" element={<PageNotFound />} />
-              </Routes>
-              <BackToTopButton />
-            </>
-          ) : <Loading />
-      }
-    </LocaleContext.Provider>
+  return (
+    <StrictMode>
+      <LocaleContext.Provider value={{ locale, setLocale }}>
+        {
+          !loading
+            ? (
+              <>
+                <Routes>
+                  <Route path="/" element={<Landing data-aos="fade-down" />} />
+                  <Route
+                    path="/services/ui-design/*"
+                    element={<SingleService title="Ui Design" />}
+                  >
+                    <Route path="*" element={<SingleService />} />
+                  </Route>
+                  <Route path="/services" element={<Services />} />
+                  <Route path="/about" element={<AboutUs />} />
+                  <Route path="/contact" element={<ContactUs />} />
+                  <Route path="*" element={<PageNotFound />} />
+                </Routes>
+                <BackToTopButton />
+              </>
+            ) : <Loading />
+        }
+      </LocaleContext.Provider>
+    </StrictMode>
   );
 }
 
