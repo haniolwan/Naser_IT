@@ -30,7 +30,7 @@ function StickyNavbar() {
 
   return (
     <Navbar
-      className="navbar navbar-expand-lg navbar-light py-2 bg-light shadow fixed-top sticky-navbar"
+      className="navbar navbar-light bg-light shadow fixed-top sticky-navbar"
       expand="lg"
       data-aos="fade-down"
     >
