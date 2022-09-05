@@ -12,7 +12,7 @@ import './style.css';
 
 function OurProcess() {
   return (
-    <Container className="process mb-5">
+    <Container className="process mb-5 w-100">
       <div className="process-title mb-4">
         <h1 className="process-section-title">How it Works</h1>
         <p className="process-section-description">

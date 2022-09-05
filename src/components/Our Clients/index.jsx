@@ -12,7 +12,7 @@ import './style.css';
 
 function OurClients() {
   return (
-    <div className="clients-content">
+    <div className="clients-content w-100">
       <h2 className="clients-title">
         Our
         <span className="clients"> Clients</span>

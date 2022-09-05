@@ -29,7 +29,7 @@ function StaticNavbar() {
     return null;
   };
   return (
-    <Navbar className="navbar navbar-dark py-4" expand="lg">
+    <Navbar className="navbar navbar-dark py-4 w-100" expand="lg">
       <Container className="nav-container">
         <Brand href="/">Naser IT</Brand>
         <Toggle aria-controls="basic-navbar-nav" />

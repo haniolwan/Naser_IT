@@ -18,7 +18,7 @@ function ServiceCard({
     return navigate(url);
   };
   return (
-    <div className="service-card" role="presentation" data-aos="fade-up" onClick={navigation}>
+    <div className="service-card w-100" role="presentation" data-aos="fade-up" onClick={navigation}>
       <LazyLoadImage className={`service-img ${classes}`} src={img} alt="service.png" />
       <div className="card-icon-container">
         {blob}

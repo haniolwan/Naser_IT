@@ -22,7 +22,7 @@ function Header() {
   const { t } = useTranslation();
 
   return (
-    <div className="header">
+    <div className="header w-100">
       {windowWidth > 1024 && <StaticNavbar />}
       {windowWidth <= 1024 || scrollPosition >= 30 ? <StickyNavbar /> : null}
       <LazyLoadImage src={ellipseImg} className="img-fluid ellipse-image" alt="Header.jpg" />

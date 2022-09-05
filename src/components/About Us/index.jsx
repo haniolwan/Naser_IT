@@ -7,7 +7,7 @@ import './style.css';
 function AboutUs() {
   return (
 
-    <Container className="mt-5">
+    <Container className="mt-5 w-100">
       <Row className="about-us-content">
         <Col className="right-content">
           <LazyLoadImage

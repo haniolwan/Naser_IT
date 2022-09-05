@@ -12,7 +12,7 @@ import './style.css';
 
 function Tools() {
   return (
-    <div className="tools-content">
+    <div className="tools-content w-100">
       <Container className="all-tools">
         <a href="https://www.dspace.com/" target="_blank" rel="noreferrer">
           <LazyLoadImage className="dspace-tool client-img-100 single-tool" src={dspaceImg} alt="clients.svg" />
