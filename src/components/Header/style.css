@@ -8,9 +8,14 @@
 }
 
 .sticky-navbar {
-    height: 70px;
+    /* height: 70px; */
     max-width: 100% !important;
-    transition: all 0.5s ease-in-out;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height .35s ease;
+         -o-transition: height .35s ease;
+            transition: height .35s ease;
 
 }
 
