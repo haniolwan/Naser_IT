@@ -34,7 +34,7 @@ function StickyNavbar() {
       expand="lg"
       data-aos="fade-down"
     >
-      <Container className="bg-light w-100">
+      <Container className="bg-light">
         <Brand href="/">Naser IT</Brand>
         <Toggle aria-controls="basic-navbar-nav" />
         <Collapse id="basic-navbar-nav">
