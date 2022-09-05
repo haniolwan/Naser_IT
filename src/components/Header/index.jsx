@@ -29,7 +29,7 @@ function Header() {
       <LazyLoadImage src={rectangleImg} className="img-fluid rectangle-image" alt="Header.jpg" />
       <LazyLoadImage src={cursorImg} className="img-fluid cursor-image" alt="Header.jpg" />
       <LazyLoadImage src={polygonImg} className="img-fluid polygon-image" alt="Header.jpg" />
-      <Container>
+      <Container className="w-100">
         <Row className="content">
           <Col className="header-right-content">
             <div className="welcome-msg mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in-out">

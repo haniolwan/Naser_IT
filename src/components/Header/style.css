@@ -340,8 +340,9 @@
     }
 
     .header-right-content {
-        position: relative;
-        top: 100px;
+        display: flex;
+        justify-content: center;
+        margin-top: 25%;
     }
 
     .title {
