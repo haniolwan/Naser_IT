@@ -9,6 +9,7 @@
 
 .sticky-navbar {
     height: 70px;
+    max-width: 100% !important;
 }
 
 .nav-items {
@@ -61,7 +62,6 @@
 }
 
 .content {
-    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
