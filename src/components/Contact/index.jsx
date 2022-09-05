@@ -45,15 +45,16 @@ function Contact() {
     }
   };
   return (
-    <Container className="mt-5 w-100">
+    <Container className="contact-us mt-5">
       <Row className="contact-content">
         <Col className="contact-left-content">
           <h1 className="contact-title">
             Got a question? Get in touch
           </h1>
-          <br />
-          {errorMsg && <p className="text-danger">{errorMsg}</p>}
-          {success && <p className="text-success">We received your email and we&apos;ll contact you as soon as possible.</p>}
+          <div className="message-container">
+            {errorMsg && <span className="text-danger">{errorMsg}</span>}
+            {success && <span className="text-success">We received your email and we&apos;ll contact you as soon as possible</span>}
+          </div>
           <Form className="contact-form" ref={form} onSubmit={submitForm}>
             <InputGroup
               className="mb-3 contact-first-row"

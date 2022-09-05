@@ -1,17 +1,13 @@
+.contact-us {
+  margin-bottom: 10%;
+}
+
 .contact-title {
   color: #331B3B;
-  margin-bottom: 20px;
 }
 
 .contact-first-row {
   gap: 10px;
-}
-
-.contact-img {
-  position: relative;
-  top: 18px;
-  width: 100%;
-  height: 400px;
 }
 
 .contact-input {
@@ -29,103 +25,26 @@
   transition: all 0.5s ease-in-out;
 }
 
+.message-container {
+  position: relative;
+  height: 10%;
+}
+
 .text-danger {
   position: absolute;
-  top: 50px;
+  left: 1.5px;
   font-size: 16px;
-  font-weight: 600;
-  margin-top: 10px;
-  letter-spacing: 0.1em;
+  font-weight: 500;
+  letter-spacing: calc(0.1em - 1px);
 }
 
 .text-success {
   position: absolute;
-  top: 60px;
+  left: 1.5px;
   font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-weight: 500;
+  letter-spacing: calc(0.1em - 1px);
 }
-
-.contact-us-img {
-  height: 110%;
-  padding: 20px 0;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .contact-us-img {
-    height: 100%;
-    padding: 45px 0 0 0 !important;
-  }
-}
-
-
-@media only screen and (max-width: 600px) {
-
-  /* Phones */
-  .contact-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-
-  .contact-us-img {
-    height: 300px;
-  }
-
-  .process {
-    margin-top: 0 !important;
-  }
-
-  .process-section-img {
-    max-width: 100% !important;
-  }
-
-  .text-danger {
-    position: absolute;
-    top: 80px;
-  }
-
-  .text-success {
-    position: absolute;
-    top: 70px;
-  }
-
-  .contact-content {
-    flex-direction: column;
-  }
-}
-
-@media only screen and (min-device-width: 601px) and (max-device-width: 767px) {
-  .contact-us-content {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  /* For Ipads */
-  .contact-form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-
-  .contact-img {
-    width: 100%;
-    height: 100%;
-    position: static;
-  }
-
-  .contact-us-content {
-    position: static;
-    flex-direction: column;
-  }
-}
-
 
 .submit-button {
   display: flex;
@@ -166,7 +85,6 @@
   stroke-width: 2;
   stroke: #fff;
   stroke-miterlimit: 10;
-  /* margin: 10% auto; */
   box-shadow: inset 0px 0px 0px #7ac142;
   animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
 }
@@ -200,4 +118,119 @@
   100% {
     box-shadow: inset 0px 0px 0px 30px #7ac142
   }
+}
+
+
+@media (min-width:320px) and (max-width:480px) {
+  .message-container {
+    height: 30px;
+  }
+
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .contact-us-img {
+    height: auto;
+  }
+
+  .process {
+    margin-top: 0 !important;
+  }
+
+  .process-section-img {
+    max-width: 100% !important;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .text-success {
+    font-size: 13px;
+    top: -5px;
+  }
+
+  .text-danger {
+    font-size: 13px;
+  }
+}
+
+@media (min-width:481px) and (max-width:768px) {
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-img {
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+
+  .contact-us-content {
+    position: static;
+    flex-direction: column;
+  }
+
+  .contact-us-img {
+    height: 100%;
+    padding: 45px 0 0 0 !important;
+  }
+
+  .message-container {
+    height: 35px;
+  }
+
+  .text-danger {
+    font-size: 14px;
+  }
+
+  .text-success {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .message-container {
+    height: 35px;
+  }
+
+  .contact-right-content {
+    padding: 20px;
+  }
+}
+
+@media (min-width:1025px) and (max-width:1200px) {
+  .contact-us-img {
+    height: 140% !important;
+  }
+
+  .contact-right-content {
+    padding: 60px 0 !important;
+  }
+}
+
+.contact-us-img {
+  height: 120%;
+}
+
+.contact-right-content {
+  padding: 1%;
 }
