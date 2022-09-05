@@ -30,14 +30,17 @@ function StickyNavbar() {
 
   return (
     <Navbar
-      className="navbar navbar-light bg-light shadow fixed-top sticky-navbar"
+      collabseOnSelect
+      fixed="top"
       expand="lg"
+      bg="light"
+      variant="light"
       data-aos="fade-down"
     >
       <Container className="bg-light">
         <Brand href="/">Naser IT</Brand>
-        <Toggle aria-controls="basic-navbar-nav" />
-        <Collapse id="basic-navbar-nav">
+        <Toggle aria-controls="responsive-navbar-nav" />
+        <Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto nav-items">
             <Link className={`sticky-link ${pathname === '/' ? 'selected-sticky' : null}`} href="/">{t('Header.Nav.item1')}</Link>
             <Link className={`sticky-link ${pathname.includes('services') ? 'selected-sticky' : null}`} href="/services">{t('Header.Nav.item2')}</Link>
