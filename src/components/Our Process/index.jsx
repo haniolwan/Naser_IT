@@ -112,7 +112,7 @@ function OurProcess() {
           </div>
         </Col>
         <Col className="process-background">
-          <LazyLoadImage className="process-section-img" src={sectionImg} alt="Process.png" />
+          <LazyLoadImage className="process-section-img w-100" src={sectionImg} alt="Process.png" />
         </Col>
       </Row>
     </Container>

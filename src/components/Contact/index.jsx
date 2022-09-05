@@ -113,7 +113,7 @@ function Contact() {
           </Form>
         </Col>
         <Col className="contact-right-content">
-          <LazyLoadImage src={contactImg} className="fa-beat-fade img-fluid contact-img" alt="AboutUs.jpg" />
+          <LazyLoadImage src={contactImg} className="fa-beat-fade img-fluid contact-img w-100" alt="AboutUs.jpg" />
         </Col>
       </Row>
     </Container>

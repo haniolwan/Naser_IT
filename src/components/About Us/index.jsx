@@ -11,7 +11,7 @@ function AboutUs() {
       <Row className="about-us-content">
         <Col className="right-content">
           <LazyLoadImage
-            className="about-img"
+            className="about-img w-100"
             src={img}
             placeholderSrc={placeholder}
             alt="AboutUs.jpg"
