@@ -30,6 +30,7 @@ function StickyNavbar() {
 
   return (
     <Navbar
+      className="sticky-navbar"
       fixed="top"
       expand="lg"
       bg="light"

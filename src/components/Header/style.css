@@ -8,15 +8,17 @@
 }
 
 .sticky-navbar {
-    /* height: 70px; */
+    height: auto;
     max-width: 100% !important;
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    -webkit-transition: height .35s ease;
-         -o-transition: height .35s ease;
-            transition: height .35s ease;
+    -webkit-transition: height .5s ease;
+    -o-transition: height .5s ease;
+    transition: height .5s ease;
+}
 
+.collapsing {
+    -webkit-transition: height .5s ease;
+    -o-transition: height .5s ease;
+    transition: height .5s ease;
 }
 
 .nav-items {
