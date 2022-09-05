@@ -10,6 +10,8 @@
 .sticky-navbar {
     height: 70px;
     max-width: 100% !important;
+    transition: all 0.5s ease-in-out;
+
 }
 
 .nav-items {

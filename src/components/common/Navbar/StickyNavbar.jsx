@@ -30,7 +30,6 @@ function StickyNavbar() {
 
   return (
     <Navbar
-      collabseOnSelect
       fixed="top"
       expand="lg"
       bg="light"
