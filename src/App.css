@@ -50,16 +50,6 @@
   padding: 4px;
 }
 
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-
 #button:hover {
   cursor: pointer;
   background-color: #72746A;
