@@ -31,7 +31,7 @@ function StickyNavbar() {
   return (
     <Navbar
       className="navbar navbar-light bg-light shadow fixed-top sticky-navbar"
-      expand="lg"
+      expand="sm"
       data-aos="fade-down"
     >
       <Container className="bg-light">
