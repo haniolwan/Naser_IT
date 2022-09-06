@@ -22,6 +22,9 @@ function Solutions() {
           <p className="process-section-description">
             We bring ideas to life!
           </p>
+          <div className="shape-blob" />
+          <div className="shape-blob one" />
+          <div className="shape-blob two" />
         </div>
         <Row className="services-content">
           <Col>

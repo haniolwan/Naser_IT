@@ -159,7 +159,118 @@
     text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+    .services-content {
+        flex-direction: column;
+    }
+
+    .first-service-img {
+        width: 8%;
+    }
+
+    .second-service-img {
+        width: 8%;
+    }
+
+    .third-service-img {
+        width: 8%;
+    }
+
+    .forth-service-img {
+        width: 8%;
+    }
+
+    .fifth-service-img {
+        width: 8%;
+    }
+
+    .sixth-service-img {
+        width: 8%;
+    }
+    .arrow-img {
+        width: 4%;
+    }
+}
+
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+    .first-service-img {
+        width: 20%;
+    }
+    .second-service-img {
+        top: 60px;
+        width: 20%;
+    }
+    .third-service-img {
+        top: 60px;
+        width: 20%;
+    }
+    .forth-service-img{
+        top: 60px;
+        width: 20%;
+    }
+    .fifth-service-img{
+        top: 60px;
+        width: 20%;
+    }
+    .sixth-service-img{
+        top: 60px;
+        width: 20%;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* For Ipads */
+
+    .services {
+        padding: 0;
+    }
+
+    .services-container {
+        padding-top: 60px;
+    }
+
+    .services-content {
+        flex-direction: column;
+    }
+
+    .card-title a {
+        font-size: 20px;
+    }
+
+    .first-service-img {
+        top: 60px;
+        width: 10%;
+    }
+
+    .second-service-img {
+        top: 65px;
+        width: 10%;
+    }
+
+    .third-service-img {
+        top: 65px;
+        width: 10%;
+    }
+
+    .forth-service-img {
+        top: 65px;
+        width: 10%;
+    }
+
+    .fifth-service-img {
+        top: 60px;
+        width: 10%;
+    }
+
+    .sixth-service-img {
+        top: 60px;
+        width: 10%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
 
     /* Phones */
     .services {
@@ -175,111 +286,34 @@
     }
 
     .first-service-img {
-        top: 62px;
-        width: 18%;
+        top: 55px;
+        width: 16%;
     }
 
     .second-service-img {
-        top: 70px;
-        width: 18%;
+        top: 60px;
+        width: 16%;
     }
 
     .third-service-img {
-        top: 65px;
-        width: 18%;
+        top: 60px;
+        width: 16%;
     }
 
     .forth-service-img {
-        top: 64px;
-        width: 18%;
+        top: 60px;
+        width: 16%;
     }
 
     .fifth-service-img {
-        top: 62px;
-        width: 18%;
+        top: 60px;
+        width: 16%;
     }
 
     .sixth-service-img {
-        top: 62px;
-        width: 18%;
+        top: 60px;
+        width: 16%;
     }
 }
 
-@media only screen and (min-device-width: 601px) and (max-device-width: 767px) {
-    .services-content {
-        flex-direction: column;
-    }
 
-    .first-service-img {
-        width: 12%;
-    }
-
-    .second-service-img {
-        width: 12%;
-    }
-
-    .third-service-img {
-        width: 12%;
-    }
-
-    .forth-service-img {
-        width: 12%;
-    }
-
-    .fifth-service-img {
-        width: 12%;
-    }
-
-    .sixth-service-img {
-        width: 12%;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    /* For Ipads */
-
-    .services {
-        padding: 0;
-    }
-    .services-container{
-        padding-top: 60px;
-    }
-
-    .services-content {
-        flex-direction: column;
-    }
-
-    .card-title a {
-        font-size: 20px;
-    }
-
-    .first-service-img {
-        top: 65px;
-        width: 9%;
-    }
-
-    .second-service-img {
-        top: 70px;
-        width: 9%;
-    }
-
-    .third-service-img {
-        top: 70px;
-        width: 9%;
-    }
-
-    .forth-service-img {
-        top: 70px;
-        width: 9%;
-    }
-
-    .fifth-service-img {
-        top: 70px;
-        width: 9%;
-    }
-
-    .sixth-service-img {
-        top: 65px;
-        width: 9%;
-    }
-}
