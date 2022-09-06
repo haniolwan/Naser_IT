@@ -13,9 +13,6 @@ function Tools() {
   return (
     <div className="tools-content">
       <Container className="all-tools">
-        <a href="https://www.dspace.com/" target="_blank" rel="noreferrer">
-          <LazyLoadImage className="dspace-tool client-img-100 single-tool" src={dspaceImg} alt="clients.svg" />
-        </a>
         <a href="https://www.vector.com/" target="_blank" rel="noreferrer">
           <LazyLoadImage className="vector-tool client-img-100 single-tool" src={vectorImg} alt="clients.svg" />
         </a>
@@ -27,6 +24,9 @@ function Tools() {
         </a>
         <a href="https://spyro-soft.com/aspice-101-a-guide-to-automotive-spice" target="_blank" rel="noreferrer">
           <LazyLoadImage className="spice-tool client-img-100 single-tool" src={spiceImg} alt="clients.svg" />
+        </a>
+        <a href="https://www.dspace.com/" target="_blank" rel="noreferrer">
+          <LazyLoadImage className="dspace-tool client-img-100 single-tool" src={dspaceImg} alt="clients.svg" />
         </a>
       </Container>
     </div>

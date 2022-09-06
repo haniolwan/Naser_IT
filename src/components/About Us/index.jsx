@@ -15,6 +15,7 @@ function AboutUs() {
             src={img}
             placeholderSrc={placeholder}
             alt="AboutUs.jpg"
+            effect="blur"
           />
         </Col>
         <Col className="about-us-left-content">

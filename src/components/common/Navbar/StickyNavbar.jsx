@@ -46,7 +46,7 @@ function StickyNavbar() {
             <Link className={`sticky-link ${pathname.includes('services') ? 'selected-sticky' : null}`} href="/services">{t('Header.Nav.item2')}</Link>
             <Link className={`sticky-link ${pathname === '/about' ? 'selected-sticky' : null}`} href="/about">{t('Header.Nav.item3')}</Link>
             <Link className={`sticky-link ${pathname === '/contact' ? 'selected-sticky' : null}`} href="/contact">{t('Header.Nav.item4')}</Link>
-            <NavDropdown className="ms-auto language-dropdown" title="English" id="basic-nav-dropdown">
+            <NavDropdown className="ms-auto language-dropdown" title={locale === 'en' ? 'English' : 'German'}>
               <Item href="" eventKey="en" onClick={() => changeLocale('en')}>English</Item>
               <Item href="" eventKey="de" onClick={() => changeLocale('de')}>German</Item>
             </NavDropdown>
