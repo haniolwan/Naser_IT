@@ -2,11 +2,11 @@ import {
   Container,
 } from 'react-bootstrap';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import dspaceImg from '../../assets/tools/dspace.png';
-import vectorImg from '../../assets/tools/vector.png';
-import lauterImg from '../../assets/tools/lauter.png';
-import isoImg from '../../assets/tools/iso-26262.png';
-import spiceImg from '../../assets/tools/aspice2.png';
+import dspaceImg from '../../assets/tools/dspace.webp';
+import vectorImg from '../../assets/tools/vector.webp';
+import lauterImg from '../../assets/tools/lauter.webp';
+import isoImg from '../../assets/tools/iso-26262.webp';
+import spiceImg from '../../assets/tools/aspice2.webp';
 import './style.css';
 
 function Tools() {

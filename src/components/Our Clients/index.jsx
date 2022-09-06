@@ -2,12 +2,12 @@ import {
   Container,
 } from 'react-bootstrap';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import porscheImg from '../../assets/clients/porsche.png';
+import porscheImg from '../../assets/clients/porsche.webp';
 import lotusImg from '../../assets/clients/lotus.svg';
-import geelyImg from '../../assets/clients/geely-prot.png';
-import aplImg from '../../assets/clients/apl.png';
-import bmwImg from '../../assets/clients/bmw.png';
-import scheImg from '../../assets/clients/sche.png';
+import geelyImg from '../../assets/clients/geely-prot.webp';
+import aplImg from '../../assets/clients/apl.webp';
+import bmwImg from '../../assets/clients/bmw.webp';
+import scheImg from '../../assets/clients/sche.webp';
 import './style.css';
 
 function OurClients() {
