@@ -6,11 +6,11 @@ import './style.css';
 function AboutUs() {
   return (
 
-    <Container className="mt-5 w-100">
+    <Container className="mt-5">
       <Row className="about-us-content">
         <Col className="right-content">
           <LazyLoadImage
-            className="about-img w-100"
+            className="about-img"
             src={img}
             alt="AboutUs.jpg"
             effect="blur"
