@@ -83,18 +83,9 @@ function ContactUs() {
                 <h1 className="contact-title">
                   Got a question? Get in touch
                 </h1>
-                <br />
-                <div className="msg-container">
-                  {errorMsg && (
-                    <p className="error-form-msg">
-                      Something went wrong, try again later
-                    </p>
-                  )}
-                  {success && (
-                    <p className="success-form-msg">
-                      Your message has been successfully sent. We will contact you very soon!
-                    </p>
-                  )}
+                <div className="message-container">
+                  {errorMsg && <span className="text-danger">{errorMsg}</span>}
+                  {success && <span className="text-success">We received your email and we&apos;ll contact you as soon as possible</span>}
                 </div>
                 <Form className="contact-form" ref={form} onSubmit={submitForm}>
                   <InputGroup
