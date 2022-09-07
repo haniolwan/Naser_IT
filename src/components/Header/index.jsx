@@ -17,10 +17,10 @@ function Header() {
   const { t } = useTranslation();
 
   return (
-    <div className="header w-100">
+    <div className="header">
       {windowWidth > 1024 && <StaticNavbar />}
       {windowWidth <= 1024 || scrollPosition >= 30 ? <StickyNavbar /> : null}
-      <Container className="w-100">
+      <Container>
         <Row className="content">
           <Col className="header-right-content">
             <div className="welcome-msg mb-4" data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in-out">

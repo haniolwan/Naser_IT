@@ -13,7 +13,7 @@ import './style.css';
 
 function Footer() {
   return (
-    <div className="footer w-100">
+    <div className="footer">
       <Container className=" mt-5">
         <Row className="footer-content">
           <Col className="first-section-footer">

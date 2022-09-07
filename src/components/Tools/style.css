@@ -199,3 +199,29 @@
         width: 168px;
     }
 }
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+    .all-tools {
+        gap: 55px;
+    }
+
+    .dspace-tool {
+        height: 20px;
+    }
+
+    .spice-tool {
+        height: 80px;
+    }
+
+    .iso-tool {
+        height: 42px;
+    }
+
+    .lauter-tool {
+        padding: 15px 0px 26px 0;
+    }
+
+    .vector-tool {
+        height: 32px;
+    }
+}

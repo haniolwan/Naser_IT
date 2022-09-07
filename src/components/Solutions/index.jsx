@@ -15,7 +15,7 @@ import { ServiceCard } from '../common';
 
 function Solutions() {
   return (
-    <div className="services w-100">
+    <div className="services">
       <Container className="services-container">
         <div className="process-title mb-4">
           <h1 className="process-section-title">Solutions & Services</h1>

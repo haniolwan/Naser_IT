@@ -29,7 +29,7 @@ function ProcessCard({
     return () => clearTimeout(loader);
   }, [option]);
   return (
-    <div className="process-details-container w-100">
+    <div className="process-details-container">
       {isLoading ? (
         <Row className="process-details-content">
           <Col>

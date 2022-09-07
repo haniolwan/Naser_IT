@@ -116,7 +116,7 @@ function Contact() {
         <Col className="contact-right-content">
           <LazyLoadImage
             src={contactImg}
-            className="fa-beat-fade img-fluid contact-us-img w-100"
+            className="fa-beat-fade contact-us-img"
             alt="AboutUs.jpg"
           />
         </Col>

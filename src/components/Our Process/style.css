@@ -130,6 +130,17 @@
     .processes-content {
         flex-direction: column;
     }
+    .process-background {
+        justify-content: center;
+    }
+    .first-dashed-lines {
+        position: relative;
+        left: 150px;
+    }
+    .second-dashed-lines {
+        position: relative;
+        left: 160px;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
