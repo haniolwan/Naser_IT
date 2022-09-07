@@ -87,7 +87,7 @@ function ContactUs() {
                 <div className="msg-container">
                   {errorMsg && (
                     <p className="error-form-msg">
-                      Your message has been successfully sent. We will contact you very soon!
+                      Something went wrong, try again later
                     </p>
                   )}
                   {success && (
