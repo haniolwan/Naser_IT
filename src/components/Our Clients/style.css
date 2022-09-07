@@ -59,7 +59,7 @@
     }
 }
 
-@media only screen and (min-device-width: 601px) and (max-device-width: 767px) {
+@media only screen and (min-width: 601px) and (max-width: 767px) {
     .all-clients {
         flex-wrap: wrap;
         justify-content: center;
@@ -103,8 +103,9 @@
     }
 }
 
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
     .porsche-client {
+        display: none;
         width: 200px;
         height: 75px;
     }
