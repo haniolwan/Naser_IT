@@ -74,6 +74,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 50px;
 }
 
 .header-right-content {
@@ -357,7 +358,7 @@
     .header-right-content {
         display: flex;
         justify-content: center;
-        padding-top: 25%;
+        padding-top: 18%;
     }
 
     .title {
