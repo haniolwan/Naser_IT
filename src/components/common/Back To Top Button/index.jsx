@@ -4,7 +4,6 @@ import upArrow from '../../../assets/up-arrow.png';
 
 function BackToTopButton() {
   const scrollPosition = useScrollPosition();
-
   return (
     <div
       role="presentation"

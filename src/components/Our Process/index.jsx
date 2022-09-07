@@ -12,7 +12,7 @@ import './style.css';
 
 function OurProcess() {
   return (
-    <Container className="process mb-5 w-100">
+    <Container className="process mb-5">
       <div className="process-title mb-4">
         <h1 className="process-section-title">How it Works</h1>
         <p className="process-section-description">
@@ -112,7 +112,7 @@ function OurProcess() {
           </div>
         </Col>
         <Col className="process-background">
-          <LazyLoadImage className="process-section-img w-100" src={sectionImg} alt="Process.png" />
+          <LazyLoadImage className="process-section-img" src={sectionImg} alt="Process.png" />
         </Col>
       </Row>
     </Container>

@@ -142,10 +142,6 @@
     margin-top: 0 !important;
   }
 
-  .process-section-img {
-    max-width: 100% !important;
-  }
-
   .contact-content {
     flex-direction: column;
   }
@@ -225,12 +221,12 @@
   .contact-right-content {
     padding: 60px 0 !important;
   }
-}
 
-.contact-us-img {
-  height: 120%;
-}
+  .contact-us-img {
+    height: 120%;
+  }
 
-.contact-right-content {
-  padding: 1%;
+  .contact-right-content {
+    padding: 1%;
+  }
 }
