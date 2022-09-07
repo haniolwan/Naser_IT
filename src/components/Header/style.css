@@ -322,7 +322,7 @@
     }
 
     .language-dropdown {
-        left: 50%;
+        margin-left:0 !important;
     }
 
     .selected-sticky::after {
