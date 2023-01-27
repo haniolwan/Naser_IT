@@ -43,37 +43,43 @@ function AboutUs() {
       </div>
       <Container className="about-page-content">
         <Row className="about-page-row">
-          <Col className="about-page-img">
+          {/* <Col className="about-page-img">
             <LazyLoadImage className="profile-img" src={profileImg} alt="Aboutus.png" />
-          </Col>
+          </Col> */}
           <Col className="services-left-content">
-            <div className="services-header">
-              <h1 className="services-header-text">NASER AL-NAWATI</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Morbi fermentum placerat leo, quis imperdiet odio ullamcorper at.
-                Sed lacinia neque at nisl condimentum vestibulum.
-                Aenean aliquet lorem vitae ex rhoncus condimentum.
-                Cras blandit dui a porta malesuada. Nulla et elit ante.
-                Morbi egestas velit vel feugiat condimentum. Aliquam erat volutpat.
+            <div className="w-75">
+              <h1 className="fw-bold pb-2 display-4">NASER AL-NAWATI</h1>
+              <p className='lh-5 fs-5'>
+                As an expert in Quality Assurance and Software/System testing in the automotive industry, as well as a Test Automation expert, I have a strong understanding of the functional safety requirements and standards specific to the automotive industry, such as <a href='https://www.iso.org/standard/43464.html'> ISO 26262</a>. I have extensive experience in implementing Quality Assurance processes and conducting Software and System testing for automotive systems, as well as expertise in test automation.
+                My expertise includes:
               </p>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Morbi fermentum placerat leo, quis imperdiet odio ullamcorper at.
-                Sed lacinia neque at nisl condimentum vestibulum.
-                Aenean aliquet lorem vitae ex rhoncus condimentum.
-                Cras blandit dui a porta malesuada. Nulla et elit ante.
-                Morbi egestas velit vel feugiat condimentum. Aliquam erat volutpat.
+                &#x2022; Reviewing and ensuring compliance of requirements, design, and test plans to functional safety standards.
               </p>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Morbi fermentum placerat leo, quis imperdiet odio ullamcorper at.
-                Sed lacinia neque at nisl condimentum vestibulum.
-                Aenean aliquet lorem vitae ex rhoncus condimentum.
-                Cras blandit dui a porta malesuada. Nulla et elit ante.
-                Morbi egestas velit vel feugiat condimentum. Aliquam erat volutpat.
+                &#x2022; Developing and implementing test strategies and plans for software and systems.
+              </p>
+              <p>
+                &#x2022; Conducting unit, integration, and system testing to ensure functional safety.
+              </p>
+              <p>
+                &#x2022; Designing and implementing automated test scripts and frameworks for software and systems.
+              </p>
+              <p>
+                &#x2022; Using test management tools and test automation frameworks to ensure efficient and effective testing.
+              </p>
+              <p>
+                &#x2022; Troubleshooting and debugging software and systems to identify and resolve functional safety issues.
+              </p>
+              <p className=''>
+                &#x2022; Providing guidance and mentoring to other team members on functional safety, testing best practices, and test automation.
+              </p>
+              <p className='lh-5 fs-6'>
+                I have experience working on specific projects and standards like <a href="https://www.iso.org/standard/60555.html"> ISO 15504</a>, <a href="https://www.iso.org/standard/43464.html"> ISO 26262</a>, or <a href='https://www.iso.org/standard/70918.html'> ISO/SAE 21434 </a>
+                I am able to communicate effectively with different stakeholders, including project managers, development teams, and regulatory bodies. I have strong problem-solving skills and am able to effectively manage competing priorities and deadlines.
+                Overall, as an expert in Quality Assurance, Software/System testing and Test Automation in the automotive industry, I am a valuable asset for any organization looking to ensure the functional safety of their automotive systems and implement effective test automation strategies.
               </p>
             </div>
           </Col>
