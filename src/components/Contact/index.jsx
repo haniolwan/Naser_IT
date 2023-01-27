@@ -8,7 +8,7 @@ import {
   InputGroup,
 } from 'react-bootstrap';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import contactImg from '../../assets/contact.png';
+import contactImg from '../../assets/contact-img.jpg';
 
 import './style.css';
 
@@ -45,15 +45,16 @@ function Contact() {
     }
   };
   return (
-    <Container className="mt-5">
+    <Container className="contact-us mt-5">
       <Row className="contact-content">
         <Col className="contact-left-content">
           <h1 className="contact-title">
             Got a question? Get in touch
           </h1>
-          <br />
-          {errorMsg && <p className="text-danger">{errorMsg}</p>}
-          {success && <p className="text-success">We received your email and we&apos;ll contact you as soon as possible.</p>}
+          <div className="message-container">
+            {errorMsg && <span className="text-danger">{errorMsg}</span>}
+            {success && <span className="text-success">We received your email and we&apos;ll contact you as soon as possible</span>}
+          </div>
           <Form className="contact-form" ref={form} onSubmit={submitForm}>
             <InputGroup
               className="mb-3 contact-first-row"
@@ -113,7 +114,11 @@ function Contact() {
           </Form>
         </Col>
         <Col className="contact-right-content">
-          <LazyLoadImage src={contactImg} className="fa-beat-fade img-fluid contact-img" alt="AboutUs.jpg" />
+          <LazyLoadImage
+            src={contactImg}
+            className="fa-beat-fade contact-us-img"
+            alt="AboutUs.jpg"
+          />
         </Col>
       </Row>
     </Container>

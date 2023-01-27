@@ -30,9 +30,9 @@ export default NavigationTab;
 NavigationTab.propTypes = {
   title: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
-  setTap: PropTypes.shape({ blob: PropTypes.string }).isRequired,
-  selectedTab: PropTypes.string.isRequired,
-  option: PropTypes.string.isRequired,
+  setTap: PropTypes.func.isRequired,
+  selectedTab: PropTypes.number.isRequired,
+  option: PropTypes.number.isRequired,
   imgSrc: PropTypes.string.isRequired,
   classes: PropTypes.string.isRequired,
 };

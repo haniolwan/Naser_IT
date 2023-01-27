@@ -213,12 +213,15 @@
     font-weight: 900;
 }
 
-@media only screen and (max-width: 600px) {
+.services-process-text {
+    font-size: 2.1rem;
+    font-weight: 900;
+    margin-bottom: 1.8rem;
+}
 
-    /* Phones */
+@media (min-width:481px) and (max-width:768px) {
     .heading-text {
         width: 100%;
-        margin-top: 16%;
     }
 
     .services-header {
@@ -234,7 +237,7 @@
     }
 
     .processes-section-header-img {
-        width: 100%;
+        width: 510px;
     }
 
     .process-header-img {
@@ -300,6 +303,102 @@
 
 }
 
+@media (min-width:320px) and (max-width:480px) {
+
+    /* Phones */
+    .heading-text {
+        width: 100%;
+    }
+
+    .services-header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .processes-header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .processes-section-header-img {
+        width: 300px;
+    }
+
+    .process-header-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .services-header-text {
+        font-size: 3rem;
+        font-weight: 900;
+        margin-bottom: 1.8rem;
+    }
+
+    .services-header ul {
+        position: relative;
+        right: 30px;
+        width: 100%;
+        color: #798a9e;
+    }
+
+    .navigation-taps-container {
+        width: 90%;
+        padding: 26px 12px;
+        margin-bottom: 3rem;
+    }
+
+    .process-section {
+        margin-top: 15%;
+        width: 100%;
+    }
+
+    .services-subtext {
+        line-height: 2.5rem;
+    }
+
+    .tap-title {
+        font-size: 12px;
+        font-weight: 900;
+    }
+
+    .nav-tap-background {
+        content: " ";
+        position: absolute;
+        width: 3rem;
+        height: 5rem;
+        border-radius: 50px;
+        background-image: linear-gradient(150deg, #f5fbffe6, rgba(255, 255, 255, 0));
+        background-repeat: repeat-x;
+        z-index: 1;
+    }
+
+    .first-tab-img {
+        width: 35px;
+    }
+
+    .second-tab-img {
+        width: 28px;
+        margin-top: 5px;
+    }
+
+    .third-tab-img {
+        width: 35px;
+    }
+
+    .process-desc-img {
+        width: 300px;
+    }
+    .process-title-loader {
+        width: 300px;
+        height: 250px;
+    }
+
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
     /* For Ipads */
 
@@ -327,7 +426,7 @@
     .process-header-img {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .services-header-text {

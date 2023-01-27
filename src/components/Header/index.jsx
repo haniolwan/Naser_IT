@@ -3,12 +3,7 @@ import {
   Row,
   Col,
 } from 'react-bootstrap';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTranslation } from 'react-i18next';
-import ellipseImg from '../../assets/ellipse.png';
-import rectangleImg from '../../assets/rectangle.png';
-import cursorImg from '../../assets/cursor.png';
-import polygonImg from '../../assets/polygon.png';
 import useScrollPosition from '../../hooks/useScrollPosition';
 import StaticNavbar from '../common/Navbar/StaticNavbar';
 import StickyNavbar from '../common/Navbar/StickyNavbar';
@@ -25,10 +20,6 @@ function Header() {
     <div className="header">
       {windowWidth > 1024 && <StaticNavbar />}
       {windowWidth <= 1024 || scrollPosition >= 30 ? <StickyNavbar /> : null}
-      <LazyLoadImage src={ellipseImg} className="img-fluid ellipse-image" alt="Header.jpg" />
-      <LazyLoadImage src={rectangleImg} className="img-fluid rectangle-image" alt="Header.jpg" />
-      <LazyLoadImage src={cursorImg} className="img-fluid cursor-image" alt="Header.jpg" />
-      <LazyLoadImage src={polygonImg} className="img-fluid polygon-image" alt="Header.jpg" />
       <Container>
         <Row className="content">
           <Col className="header-right-content">

@@ -20,13 +20,9 @@ function StaticNavbar() {
   const { locale } = useContext(LocaleContext);
   const changeLocale = (l) => {
     if (locale !== l) {
-      const timer = setTimeout(() => {
-        i18n.changeLanguage(l);
-        window.location.reload();
-      }, 700);
-      return clearTimeout(() => timer);
+      i18n.changeLanguage(l);
+      window.location.reload();
     }
-    return null;
   };
   return (
     <Navbar className="navbar navbar-dark py-4" expand="lg">

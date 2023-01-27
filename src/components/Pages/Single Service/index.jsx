@@ -15,9 +15,9 @@ import useScrollPosition from '../../../hooks/useScrollPosition';
 import useWindowSize from '../../../hooks/useWindowSize';
 import StaticNavbar from '../../common/Navbar/StaticNavbar';
 import StickyNavbar from '../../common/Navbar/StickyNavbar';
-import rightArrowImg from '../../../assets/angle-right-.svg';
 import { NavigationTab, ProcessCard } from '../../common';
 import { Footer } from '../..';
+import rightArrowImg from '../../../assets/angle-right-.svg';
 import computerImg from '../../../assets/computer.png';
 import brainstormingImg from '../../../assets/brainstorming.png';
 import wireframingImg from '../../../assets/wireframe.png';
@@ -25,7 +25,6 @@ import laptopImg from '../../../assets/laptop.png';
 import processArrowImg from '../../../assets/services/right-arrow.png';
 import webDesign from '../../../assets/web-design.jpg';
 import webDesign2 from '../../../assets/web-design2.jpg';
-
 import './style.css';
 
 function SingleService({ title }) {
@@ -66,10 +65,10 @@ function SingleService({ title }) {
         </div>
       </div>
       <Container className="mt-5">
+        <h1 className="services-header-text">{title}</h1>
         <Row className="processes-header-content">
           <Col className="services-left-content">
             <div className="services-header">
-              <h1 className="services-header-text">{title}</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Morbi fermentum placerat leo, quis imperdiet odio ullamcorper at.
@@ -100,7 +99,7 @@ function SingleService({ title }) {
         </Row>
         <Row className="services-process-section">
           <div className="process-section">
-            <h1 className="services-header-text">Our Process</h1>
+            <h1 className="services-process-text">Our Process</h1>
             <p className="services-subtext">
               Great websites add great values to your business. From wire-framing to
               PSD designing, we do it all.

@@ -5,7 +5,7 @@ import {
 } from 'react-bootstrap';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import noteImg from '../../assets/processes/note.png';
-import sectionImg from '../../assets/processes/processes-section.jpg';
+import sectionImg from '../../assets/processes/processes-section.webp';
 import researchImg from '../../assets/processes/research.png';
 import profilesImg from '../../assets/processes/profiles.png';
 import './style.css';

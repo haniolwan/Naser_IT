@@ -74,7 +74,7 @@ ProcessCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   subDescription: PropTypes.string.isRequired,
-  option: PropTypes.string.isRequired,
-  nextOption: PropTypes.string.isRequired,
+  option: PropTypes.number.isRequired,
+  nextOption: PropTypes.func.isRequired,
   nextPath: PropTypes.string.isRequired,
 };
